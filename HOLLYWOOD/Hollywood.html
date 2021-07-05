@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Letterboxd</title>
+  <style>html{scroll-behavior: smooth;}
+  *{font-family: paprika;}</style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</head>
+<body style="background-image:url('/Letterboxd/Images/Background.png');background-size:cover;height: 100vh;width: 100%; ">
+        
+      <div id="demo" class="carousel slide" data-ride="carousel" >
+      
+       <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+  
+  
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="loki.jpg" height="610px">
+          </div>
+          <div class="carousel-item">
+            <img src="wonder_woman_1984.jpg"height="610px">
+          </div>
+          <div class="carousel-item">
+            <img src="hitman.jpg" height="610px">
+          </div>
+          <div class="carousel-item">
+            <img src="w1.png"height="610px">
+          </div>
+        </div>
+        
+          <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+                            <!--LETTERBOXD-->
+<div class="jumbotron mt-5  bg-light text-black" style="font-size: 60px;font-family: paprika;opacity: 90%;text-align: center;">Letterboxd</div>
+                            <!--NAVBAR-->
+      <div class="navbar navbar-sm  navbar-dark sticky-top" style="background-color: black;">
+          <a class="navbar-brand" href="#">
+                <img src="/Letterboxd/Images/Letterboxd.png"  style="width:40px;">
+          </a>
+        <form class="form-inline" action="/Letterboxd/Home.html" >
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-dark" type="submit">Search</button>
+        </form>
+              <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Home</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Hollywood</a>
+                <a class="dropdown-item" href="/Letterboxd/KOLLYWOOD/Kollywood.html">Kollywood</a>
+                <a class="dropdown-item" href="/Letterboxd/ANIME/Anime.html">Anime</a>
+        </div>
+            </li>
+            <li class="navbar-item">
+              <a class="nav-link" href="#logout">Logout</a>
+            </li>
+            <li class="navbar-item"><a class="nav-link" href="#aboutus">About Us</a></li>
+              <li><label for="customRange"  style="color: rgb(255, 255, 255);">Rate Us<pre style="color:royalblue">1     2     3     4     5</pre></label><br>
+              <input type="range" class="custom-range" id="customRange" name="points2" style="width: 200px;">
+            </li>
+          </ul>
+          <span class="navbar-text text-white">
+            Thank you Visit Us again
+          </span>
+      </div>
+    </div><br><br>
+  <table class="table-borderless">
+                            <!--THIS IS FIRST ROW-->
+                            <!--THIS IS THE TOMORROW WAR-->
+  <tr>
+    <td>
+    <div class="card" style="width:200px; margin-left:70px ;background-color:black">
+      <img class="card-img-top" src="The_Tomorrow_War.jpg" style="width: 200px;margin-right: 5;">
+      <div class="card-body">
+        <h4 class="card-title" style="font-size: 50px;"></h4>
+      
+        <button type="button" class="btn btn-sm " style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+        data-toggle="collapse" data-target="#demo">The Tomorrow War</button>
+          <div id="demo" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+                  A family man is drafted to fight in a future war where the fate of humanity relies on his ability to confront the past.<br><br>
+              Director:<br> Chris McKay<br><br>
+              Writer: <br>Zach Dean<br><br>
+              Stars:<br><br> Chris Pratt, Yvonne Strahovski, J.K. Simmons 
+            </div>
+          </div>
+      </div>
+      <a href="https://www.imdb.com/title/tt9777666/" target="blank" class="btn btn-sm text-white">IMDB</a>
+    </div>
+     </td>
+                            <!--THIS IS BLACK WIDOW-->
+  <td>  
+    <div class="card" style="width:200px; margin-left:50px ;background-color:black">
+      <img class="card-img-top" src="Blackwidow.png" alt="Card image" style="width: 200px;margin-right: 5;">
+
+      <div class="card-body">
+        <h4 class="card-title" style="font-size: 50px;"></h4>
+
+         <button type="button" class="btn btn-sm ml-4" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+        data-toggle="collapse" data-target="#demo1">Blackwidow</button>
+          <div id="demo1" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+                  A film about Natasha Romanoff in her quests between the films Civil War and Infinity War.
+                    Director:<br><br> Cate Shortland<br><br>
+                    Writers: <br><br>Jac Schaeffer (story by), Ned Benson (story by)<br><br>
+                    Stars: <br><br>Scarlett Johansson, Florence Pugh, David Harbour <br><br> 
+            </div>
+          </div> 
+      </div>
+      <a href="https://www.imdb.com/title/tt3480822/" target="blank" class="btn btn-sm text-white">IMDB</a>
+    </div>
+                            <!--THIS IS REMINISCENCE-->
+  </td><td>  
+    <div class="card" style="width:200px; margin-left:50px ;background-color:black">
+      <img class="card-img-top" src="Reminiscene.jpg" alt="Card image" style="width: 200px;margin-right: 5;">
+
+      <div class="card-body">
+        <button type="button" class="btn btn-sm ml-4" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+        data-toggle="collapse" data-target="#demo2">Reminiscene</button>
+          <div id="demo2" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+                  A scientist discovers a way to relive your past and uses the technology to search for his long lost love.<br><br>
+                    Director:<br><br> Lisa Joy<br><br>
+                    Writer:<br><br> Lisa Joy<br><br>
+                    Stars:<br><br> Rebecca Ferguson, Hugh Jackman, Thandiwe Newton<br><br>
+            </div>
+          </div> 
+      </div>
+      <a href="https://www.imdb.com/title/tt3272066/?ref_=nv_sr_srsg_0" target="blank" class="btn btn-sm text-white">IMDB</a>
+    </div>
+                            <!--THIS IS JUNGLE CRUISE-->
+  </td><td>  
+    <div class="card" style="width:200px; margin-left:50px ;background-color:black">
+      <img class="card-img-top" src="jungle cruise.jpg" alt="Card image" style="width: 200px;margin-right: 5;">
+
+      <div class="card-body">
+        <button type="button" class="btn btn-sm ml-4" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+        data-toggle="collapse" data-target="#demo3">Jungle Cruise</button>
+          <div id="demo3" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+                  Based on Disneyland's theme park ride where a small riverboat takes a group of travelers through a jungle filled with dangerous animals and reptiles but with a supernatural element.<br><br>
+                Director: <br><br>Jaume Collet-Serra<br><br>
+                Writers: <br><br>Glenn Ficarra (screenplay by), John Requa (screenplay by) <br><br>
+                Stars:<br><br> Dwayne Johnson, Emily Blunt, Edgar Ramírez <br><br>
+            </div>
+          </div> 
+      </div>
+      <a href="https://www.imdb.com/title/tt0870154/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm text-white">IMDB</a>
+    </div></td>
+  </tr>
+                            <!--THIS IS NEXT ROW-->
+                            <!--THIS IS BATMAN-->
+
+  <td class="td">&nbsp;</td>
+  <tr>
+    <td>
+      <div class="card" style="width:200px; margin-left:70px ;background-color:black">
+        <img class="card-img-top" src="batman.jpg" alt="Card image" style="width: 200px;margin-right: 5;">
+
+        <div class="card-body">
+          <button type="button" class="btn btn-sm ml-5" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+        data-toggle="collapse" data-target="#demo4">Batman</button>
+          <div id="demo4" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+                  The plot is unknown.<br><br>
+                Director: <br><br>Matt Reeves<br><br>
+                Writers:<br><br> Peter Craig, Bob Kane (Batman created by)<br><br>
+                Stars:<br><br> Robert Pattinson, Paul Dano, Colin Farrell<br><br>
+            </div>
+          </div> 
+        </div>
+        <a href="https://www.imdb.com/title/tt1877830/?ref_=nv_sr_srsg_3" target="blank" class="btn btn-sm text-white">IMDB</a>
+      </div>
+    </td>
+                              <!--THE FOREVER PURGE-->
+    <td>  
+      <div class="card" style="width:200px; margin-left:50px ;background-color:black">
+        <img class="card-img-top" src="theforeverpurge.jpg" alt="Card image" style="width: 200px;margin-right: 5;">
+        <div class="card-body">
+         <button type="button" class="btn btn-sm ml-1" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+        data-toggle="collapse" data-target="#demo5">The Forever Purge</button>
+          <div id="demo5" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+                 All the rules are broken as a sect of lawless marauders decides that the annual Purge does not stop at daybreak and instead should never end.<br><br>
+              Director: <br><br>Everardo Gout<br><br>
+              Writers:<br><br> James DeMonaco, James DeMonaco (characters)<br><br>
+              Stars: <br><br>Ana de la Reguera, Josh Lucas, Will Patton <br><br>
+            </div>
+          </div> 
+        </div>
+        <a href="https://www.imdb.com/title/tt10327252/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm text-white">IMDB</a>
+      </div>
+    </td>
+                              <!--This is Succide Squad-->
+    <td>
+      <div class="card" style="width:200px; margin-left:50px ;background-color:black">
+        <img class="card-img-top" src="succidesquad.jpg" alt="Card image" style="width: 200px;margin-right: 5;">
+        <div class="card-body">
+          <button type="button" class="btn btn-sm ml-4" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+        data-toggle="collapse" data-target="#demo6">Succide Squad</button>
+          <div id="demo6" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+            Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X as they are dropped off at the remote, enemy-infused island of Corto Maltese.<br><br>
+          Director:<br><br> James Gunn<br><br>
+          Writers:<br><br> James Gunn, John Ostrander (comic book)<br><br>
+          Stars:<br><br> Margot Robbie, Idris Elba, John Cena <br><br>
+            </div>
+          </div> 
+        </div>
+        <a href="https://www.imdb.com/title/tt6334354/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm text-white">IMDB</a>
+      </div>
+    </td>
+                              <!--this is Dune-->
+    <td>
+      <div class="card" style="width:200px; margin-left:50px ;background-color:black">
+        <img class="card-img-top" src="dune.jpg" alt="Card image" style="width: 200px;margin-right: 5;">
+        <div class="card-body">
+         <button type="button" class="btn btn-sm ml-5" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+        data-toggle="collapse" data-target="#demo7">Dune</button>
+          <div id="demo7" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+                  Feature adaptation of Frank Herbert's science fiction novel, about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.<br><br>
+                Director: <br><br>Denis Villeneuve<br><br>
+                Writers: <br><br>Frank Herbert (novel), Jon Spaihts (screenplay by)
+                Stars: <br><br>Timothée Chalamet, Rebecca Ferguson, Zendaya <br><br>
+            </div>
+          </div> 
+        </div>
+        <a href="https://www.imdb.com/title/tt1160419/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm text-white">IMDB</a>
+      </div>
+    </td>
+  </tr>
+</table><br><br>
+                            <!--pagination-->
+<div>
+    <ul class="pagination justify-content-center" >
+      <li class="page-item"><a class="page-link" href="#"  style="background-color: black;color: rgb(255, 255, 255);">Hollywood</a></li>
+      <li class="page-item"><a class="page-link" href="/Letterboxd/KOLLYWOOD/Kollywood.html"  style="background-color: black;color: rgb(255, 255, 255);">Kollywood</a></li>
+      <li class="page-item"><a class="page-link" href="/Letterboxd/ANIME/Anime.html"  style="background-color: black;color: rgb(255, 255, 255);">Anime</a></li>
+      <li class="page-item"><a class="page-link" href="/Letterboxd/More/More.html"  style="background-color: black;color: rgb(255, 255, 255);">More....</a></li>
+    </ul>
+</div><br><br>
+<div id="aboutus"class="jumbotron jumbotron-fluid" style="text-align: center;background-color: black;"> 
+  <a href="#" style="color: white;text-decoration: none;">Letterboxd@gmail.com</a><br>
+  <a href="#" style="color: white;text-decoration: none;">www.Letterboxd.com</a><br>
+  <a href="#" style="color: white;text-decoration: none;">@_Letter_boxd</a><br>
+  <button type="button" class="btn text-primary" data-toggle="modal" data-target="#myModal" id="logout">Logout</button>
+
+                            <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header"><h4>Logout</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+        
+
+          <div class="modal-body">
+                <form class="form" action="/Letterboxd/Home.html">
+                  <label for="email" class="mr-sm">Email address:</label>
+                  <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Enter email" id="email">
+                  <label for="pwd" class="mr-sm">Password:</label>
+                  <input type="password" class="form-control mb-2 mr-sm-2" placeholder="Enter password" id="pwd"></h4>
+          </div>
+   
+
+          <div class="modal-footer">
+              <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        
+            </form>      
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

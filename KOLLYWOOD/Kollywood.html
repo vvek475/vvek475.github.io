@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Letterboxd</title>
+  <style>html{scroll-behavior: smooth;}
+  *{font-family: paprika;}</style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</head>
+<body style="background-image:url('/Letterboxd/Images/Background.png');background-size:cover;height: 100vh;width: 100%; ">
+     
+    <div id="demo" class="carousel slide" data-ride="carousel" >
+      
+                                        <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
+  
+  
+                                          <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="naane-varuven_w.jpg" height="my-auto" width="100%"></div>
+        <div class="carousel-item"><img src="Jagame_thanthiram.jpg" height="610" width="100%"></div>
+        <div class="carousel-item"><img src="karnan_w.jpg" height="610px" width="100%"></div>
+        <div class="carousel-item"><img src="ayalaan.jpg"height="610px" width="100%"></div>
+      </div>
+  
+                                          <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+                            <!--LETTERBOXD-->
+    <div class="jumbotron mt-5  bg-light text-black" style="font-size: 60px;font-family: paprika;opacity: 90%;text-align: center;">Letterboxd</div>
+                            <!--NAVBAR-->
+  <div class="navbar navbar-sm  navbar-dark sticky-top" style="background-color: black;">
+                            <!--LOGO-Navbar-->
+      <a class="navbar-brand" href="/Letterboxd/Home.html"><img src="/Letterboxd/Images/Letterboxd.png"  style="width:40px;"></a>
+                            <!--SEarch bar-->
+          <form class="form-inline" action="/Letterboxd/Home.html" >
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form>
+                    <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                                <!-- Navbar links -->
+                  
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Home</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/Letterboxd/HOLLYWOOD/Hollywood.html">Hollywood</a>
+            <a class="dropdown-item" href="#">Kollywood</a>
+            <a class="dropdown-item" href="/Letterboxd/ANIME/Anime.html">Anime</a>
+          </div>
+        </li>
+        <li class="navbar-item"><a class="nav-link" href="#logout">Logout</a></li>
+        <li class="navbar-item"><a class="nav-link" href="#aboutus">About Us</a></li>
+                          <!--Sliding Bar-->
+        <li><label for="customRange"  style="color: rgb(255, 255, 255);">Rate Us
+          <pre style="color:royalblue">1     2     3     4     5</pre></label><br>
+          <input type="range" class="custom-range" id="customRange" name="points2" style="width: 200px;"></li>
+      </ul>
+      <span class="navbar-text text-white">Thank you Visit Us again</span>
+      
+    </div>
+  </div><br><br>
+<table class="table-borderless">
+                            <!--THIS IS FIRST ROW-->
+                            <!--THIS IS Dhuruva Natchathiram-->
+  <tr>
+    <td>
+      <div class="card" style="width:200px; margin-left:70px ;background-color:black">
+        <img class="card-img-top" src="Dhruva-Natchathiram.jpg" style="width: 198px;margin-right: 5;height: 280px">
+        <div class="card-body"><h4 class="card-title" style="font-size: 50px;"></h4>
+                                <!--Collpsible-->
+          <button type="button" class="btn btn-sm" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+          data-toggle="collapse" data-target="#demo">Dhuruva Natchathiram</button>
+          <div id="demo" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+              John, a New York-based undercover agent and his team is entrusted with a secret mission to 
+              bring back the leader of the team who has gone missing mysteriously.<br><br>
+              Director:<br><br> Gautham Vasudev Menon (as Gautham Menon)<br><br>
+              Writers:<br><br> Gautham Vasudev Menon (as Gautham Menon), Deepak Venkateshan (as Deepak Venkatesha)<br><br>
+              Stars:<br><br> Vikram, Aishwarya Rajesh, Ritu Varma 
+            </div>
+          </div>
+        </div>
+          <a href="https://www.imdb.com/title/tt6735802/" target="blank" class="btn btn-sm text-white">IMDB</a>
+      </div>
+     </td>
+                            <!--THIS IS NAANE VARRUVEN-->
+    <td>
+      <div class="card" style="width:200px; margin-left:50px ;background-color:black">
+        <img class="card-img-top" src="naane-varuven.jpg" alt="Card image" style="width: 198px;margin-right: 5;height: 280px">
+
+        <div class="card-body"><h4 class="card-title" style="font-size: 50px;"></h4>
+           <button type="button" class="btn btn-sm ml-2" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+          data-toggle="collapse" data-target="#demo1">Naane Varruven</button>
+          <div id="demo1" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+             When Dhanush waiting for so long to get back in to his own mindset, his Girlfriend left him and got married to his boss and he is still waiting for her to come back.<br><br>
+          Director:<br><br> K. Selvaraghavan<br><br>
+          Star: <br><br>Dhanush<br><br>
+            </div>
+          </div>
+        </div>
+        <a href="https://www.imdb.com/title/tt13845438/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm text-white">IMDB</a>
+      </div>                           
+    </td>
+                             <!--THIS IS COBRA-->
+    <td>
+      <div class="card" style="width:200px; margin-left:50px ;background-color:black">
+        <img class="card-img-top" src="cobra.jpg" alt="Card image" style="width: 198px;margin-right: 5;height: 280px;">
+
+        <div class="card-body">
+          <h4 class="card-title" style="font-size: 50px;"></h4>
+           <button type="button" class="btn btn-sm ml-5" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+          data-toggle="collapse" data-target="#demo2">Cobra</button>
+          <div id="demo2" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+              Director:<br><br> R. Ajay Gnanamuthu<br><br>
+              Writers:<br><br> R. Ajay Gnanamuthu (Writer), Kannan (dialogue writer)<br><br> 
+              Stars:<br><br> Vikram, Irfan Pathan, Srinidhi Shetty <br><br>
+            </div>
+          </div>    
+        </div>
+        <a href="https://www.imdb.com/title/tt9466814/?ref_=nv_sr_srsg_0" target="blank" class="btn btn-sm text-white">IMDB</a>
+      </div>
+  </td>
+                             <!--THIS IS Beast-->
+  <td>  
+    <div class="card" style="width:200px; margin-left:50px ;background-color:black">
+      <img class="card-img-top" src="beast.jpg" alt="Card image" style="width: 198px;margin-right: 5;height: 280px">
+
+      <div class="card-body">
+        <h4 class="card-title" style="font-size: 50px;"></h4>
+         <button type="button" class="btn btn-sm ml-5" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+          data-toggle="collapse" data-target="#demo3">Beast</button>
+          <div id="demo3" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+              Beast is an upcoming Indian Tamil-language action film written and directed by Nelson Dilipkumar. It is produced by Sun Pictures. The film stars Vijay and Pooja Hegde, with Yogi Babu, Shine Tom Chacko, VTV Ganesh and Aparna Das in supporting roles.
+            </div>
+          </div> 
+      </div>
+      <a href="https://en.wikipedia.org/wiki/Beast_(upcoming_film)" target="blank" class="btn btn-sm text-white">Wikipedia</a>
+    </div>
+  </td>
+</tr>
+                            <!--THIS IS NEXT ROW-->
+                            <!--THIS IS Maanadu-->
+
+  <td class="td">&nbsp;</td>
+  <tr>
+    <td>
+      <div class="card" style="width:200px; margin-left:70px ;background-color:black">
+        <img class="card-img-top" src="Maanadu.jpg" alt="Card image" style="width: 198px;margin-right: 5;height: 280px">
+
+        <div class="card-body">
+          <h4 class="card-title" style="font-size: 50px;"></h4>
+           <button type="button" class="btn btn-sm ml-4" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+          data-toggle="collapse" data-target="#demo4">&nbsp;&nbsp;  Maanadu</button>
+          <div id="demo4" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+              <br><br>Maanaadu  is an upcoming Indian Tamil-language political action thriller film written and directed by Venkat Prabhu and produced by Suresh Kamatchi, starring Silambarasan and Kalyani Priyadarshan, with S. J. Suryah as the antagonist. It also stars Bharathiraja, S. A. Chandrasekhar, Karunakaran and Premgi Amaren in supporting roles.
+            </div>
+          </div>      
+        </div>
+        <a href="https://en.wikipedia.org/wiki/Maanaadu" target="blank" class="btn btn-sm text-white">Wikipedia</a>
+      </div>
+    </td>
+                            <!--THis is Doctor-->
+  <td>  
+    <div class="card" style="width:200px; margin-left:50px ;background-color:black">
+      <img class="card-img-top" src="Doctor.jpg" alt="Card image" style="width: 198px;margin-right: 5;height: 280px">
+      <div class="card-body">
+        <h4 class="card-title" style="font-size: 50px;"></h4>
+         <button type="button" class="btn btn-sm ml-4" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+          data-toggle="collapse" data-target="#demo5">&nbsp;&nbsp;&nbsp;&nbsp;Doctor</button>
+          <div id="demo5" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+              Director: Nelson Dilipkumar<br><br>
+            Writer: <br><br>Nelson Dilipkumar<br><br>
+            Stars:<br><br> Sivakarthikeyan, Yogi Babu, Priyanka Arulmohan<br><br>
+            </div>
+          </div>      
+      </div>
+      <a href="https://www.imdb.com/title/tt11374902/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm text-white">IMDB</a>
+    </div>
+  </td>
+                                <!--This is Vaadivaasal-->
+  <td>
+    <div class="card" style="width:200px; margin-left:50px ;background-color:black">
+      <img class="card-img-top" src="Vaadivaasal.jpg" alt="Card image" style="width: 198px;margin-right: 5;height: 280px">
+      <div class="card-body">
+        <h4 class="card-title" style="font-size: 50px;"></h4>
+         <button type="button" class="btn btn-sm ml-4" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+          data-toggle="collapse" data-target="#demo6">Vaadivaasal</button>
+          <div id="demo6" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+              Director: Vetrimaaran<br><br>
+            Writers:<br><br> Cs Chellapa, Vetrimaaran<br><br>
+            Star: <br><br>Suriya<br><br>
+            </div>
+          </div>
+      </div>
+      <a href="https://www.imdb.com/title/tt11489038/" target="blank" class="btn btn-sm text-white">IMDB</a>
+    </div>
+  </td>
+                            <!--This is Valimai-->
+  <td>
+    <div class="card" style="width:200px; margin-left:50px ;background-color:black">
+      <img class="card-img-top" src="Valimai.jpg" alt="Card image" style="width: 198px;margin-right: 5;height: 280px">
+      <div class="card-body">
+        <h4 class="card-title" style="font-size: 50px; "></h4>
+         <button type="button" class="btn btn-sm ml-4" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+          data-toggle="collapse" data-target="#demo7">&nbsp;&nbsp;&nbsp;Valimai</button>
+          <div id="demo7" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+              Director: H. Vinoth<br><br>
+            Writer:<br><br> H. Vinoth<br><br>
+            Stars:<br><br> Huma Qureshi, Ajith Kumar, Yogi Babu <br><br>
+            </div>
+          </div>
+      </div>
+      <a href="https://www.imdb.com/title/tt10806040/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm text-white">IMDB</a>
+    </div>
+    </td>
+  </tr>
+</table><br><br>
+                              <!--pagination-->
+<div>
+    <ul class="pagination justify-content-center" >
+      <li class="page-item"><a class="page-link text-white" href="/Letterboxd/HOLLYWOOD/Hollywood.html"  style="background-color: black;">Hollywood</a></li>
+      <li class="page-item"><a class="page-link text-white" href="#"  style="background-color: black;">Kollywood</a></li>
+      <li class="page-item"><a class="page-link text-white" href="/Letterboxd/ANIME/Anime.html"  style="background-color: black">Anime</a></li>
+      <li class="page-item"><a class="page-link text-white" href="/Letterboxd/More/More.html"  style="background-color: black;">More....</a></li>
+    </ul>
+</div>
+<div id="aboutus"class="jumbotron jumbotron-fluid" style="text-align: center;background-color: black;"> 
+  <a href="#" style="color: white;text-decoration: none;">Letterboxd@gmail.com</a><br>
+  <a href="#" style="color: white;text-decoration: none;">www.Letterboxd.com</a><br>
+  <a href="#" style="color: white;text-decoration: none;">@_Letter_boxd</a><br>
+  <button type="button" class="btn text-primary" data-toggle="modal" data-target="#myModal" id="logout">Logout</button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header"><h4>Logout</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button></div>
+        
+
+          <div class="modal-body">
+            <form class="form" action="/Letterboxd/Home.html">
+                <label for="email" class="mr-sm">Email address:</label>
+                <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Enter email" id="email">
+                <label for="pwd" class="mr-sm">Password:</label>
+                <input type="password" class="form-control mb-2 mr-sm-2" placeholder="Enter password" id="pwd"></h4>
+          </div>
+   
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </form>      
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>      
+</body>
+</html>

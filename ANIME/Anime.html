@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Letterboxd</title>
+  <style>html{scroll-behavior: smooth;}
+  *{font-family: paprika;}</style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</head>
+<body style="background-image:url('/Letterboxd/Images/Background.png');background-size:cover;height: 100vh;width: 100%; ">
+     
+    <div id="demo" class="carousel slide" data-ride="carousel" >
+      
+                                        <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
+  
+  
+                                          <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="w_naruto.jpg" height="610px"></div>
+        <div class="carousel-item"><img src="w_dragon ball z.png" height="610" width="100%"></div>
+        <div class="carousel-item"><img src="w_boruto.png" height="610px" width="100%"></div>
+        <div class="carousel-item"><img src="w_fairytail.png"height="610px" width="100%"></div>
+      </div>
+  
+                                          <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+                            <!--LETTERBOXD-->
+    <div class="jumbotron mt-5  bg-light text-black" style="font-size: 60px;font-family: paprika;opacity: 90%;text-align: center;">Letterboxd</div>
+                            <!--NAVBAR-->
+  <div class="navbar navbar-sm  navbar-dark sticky-top" style="background-color: black;">
+                            <!--LOGO-Navbar-->
+      <a class="navbar-brand" href="#"><img src="/Letterboxd/Images/Letterboxd.png"  style="width:40px;"></a>
+                            <!--SEarch bar-->
+          <form class="form-inline" action="/Letterboxd/Home.html" >
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form>
+                    <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                                <!-- Navbar links -->
+                  
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Home</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/Letterboxd/HOLLYWOOD/Hollywood.html">Hollywood</a>
+            <a class="dropdown-item" href="/Letterboxd/KOLLYWOOD/Kollywood.html">Kollywood</a>
+            <a class="dropdown-item" href="#">Anime</a>
+          </div>
+        </li>
+        <li class="navbar-item"><a class="nav-link" href="#logout">Logout</a></li>
+        <li class="navbar-item"><a class="nav-link" href="#aboutus">About Us</a></li>
+                          <!--Sliding Bar-->
+        <li><label for="customRange"  style="color: rgb(255, 255, 255);">Rate Us
+          <pre style="color:royalblue">1     2     3     4     5</pre></label><br>
+          <input type="range" class="custom-range" id="customRange" name="points2" style="width: 200px;"></li>
+      </ul>
+      <span class="navbar-text text-white">Thank you Visit Us again</span>
+      
+    </div>
+  </div><br><br>
+<table class="table-borderless">
+                            <!--THIS IS FIRST ROW-->
+                            <!--THIS IS Naruto-->
+  <tr>
+    <td>
+      <div class="card" style="width:200px; margin-left:70px ;background-color:black">
+        <img class="card-img-top" src="Naruto.jpg" style="width: 198px;margin-right: 5;height: 280px">
+        <div class="card-body"><h4 class="card-title" style="font-size: 50px;"></h4>
+                                <!--Collpsible-->
+          <button type="button" class="btn btn-sm ml-5" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+          data-toggle="collapse" data-target="#demo">Naruto</button>
+          <div id="demo" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+              Naruto Uzumaki, is a loud, hyperactive, adolescent ninja who constantly searches for approval and recognition, as well as to become Hokage, who is acknowledged as the leader and strongest of all ninja in the village.<br><br>
+            Creator:<br><br> Masashi Kishimoto<br><br>
+            Stars:<br><br> Junko Takeuchi, Maile Flanagan, Kate Higgins<br><br>
+            </div>
+          </div>
+        </div>
+          <a href="https://www.imdb.com/title/tt0988824/?ref_=nv_sr_srsg_2" target="blank" class="btn btn-sm text-white">IMDB</a>
+      </div>
+     </td>
+                            <!--THIS IS Dragon Ball Z-->
+    <td>
+      <div class="card" style="width:200px; margin-left:50px ;background-color:black">
+        <img class="card-img-top" src="DragonBall.jpg" alt="Card image" style="width: 198px;margin-right: 5;height: 280px">
+
+        <div class="card-body"><h4 class="card-title" style="font-size: 50px;"></h4>
+           <button type="button" class="btn btn-sm" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+          data-toggle="collapse" data-target="#demo1">Dragon Ball z</button>
+          <div id="demo1" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+              Six months after the defeat of Majin Buu, The mighty Saiyan Son Goku continues his quest on becoming stronger.<br><br>
+            Creator:<br><br> Akira Toriyama<br><br>
+            Stars:<br><br> Masako Nozawa, Naoki Tatsuta, Ryô Horikawa <br><br>
+            </div>
+          </div>
+        </div>
+        <a href="https://www.imdb.com/title/tt4644488/?ref_=nv_sr_srsg_6" target="blank" class="btn btn-sm text-white">IMDB</a>
+      </div>                           
+    </td>
+                             <!--THIS IS Boruto-->
+    <td>
+      <div class="card" style="width:200px; margin-left:50px ;background-color:black">
+        <img class="card-img-top" src="boruto.jpg" alt="Card image" style="width: 198px;margin-right: 5;height: 280px;">
+
+        <div class="card-body">
+          <h4 class="card-title" style="font-size: 50px;"></h4>
+           <button type="button" class="btn btn-sm ml-5" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+          data-toggle="collapse" data-target="#demo2">Boruto</button>
+          <div id="demo2" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+              Son of Naruto Uzumaki, Boruto, follows his father's footsteps along with his friends to become great ninja. Throughout all their adventures, Boruto is determined to make his mark in the ninja world and live outside of his father's shadow.<br><br>
+            Stars:<br><br> Yûko Sanpei, Kokoro Kikuchi, Ryûichi Kijima <br><br>
+            </div>
+          </div>    
+        </div>
+        <a href="https://www.imdb.com/title/tt6342474/?ref_=nv_sr_srsg_0" target="blank" class="btn btn-sm text-white">IMDB</a>
+      </div>
+  </td>
+                             <!--THIS IS Fairy Tail-->
+  <td>  
+    <div class="card" style="width:200px; margin-left:50px ;background-color:black">
+      <img class="card-img-top" src="fairytail.jpg" alt="Card image" style="width: 198px;margin-right: 5;height: 280px">
+
+      <div class="card-body">
+        <h4 class="card-title" style="font-size: 50px;"></h4>
+         <button type="button" class="btn btn-sm ml-4 " style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
+          data-toggle="collapse" data-target="#demo3"><pre style="color: white;font-family: paprika;">    Fairy Tail</pre></button>
+          <div id="demo3" class="collapse">
+            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+              Lucy, an aspiring Celestial Wizard, becomes a friend and ally to powerful wizards Natsu, Gray, and Erza, who are part of the (in)famous wizard guild, Fairy Tail.<br><br>
+            Creators:<br><br> Hiro Mashima, Masashi Sogo, Masashi Sogo<br><br>
+            Stars:<br><br> Cherami Leigh, Todd Haberkorn, Tia Lynn Ballard<br><br> 
+            </div>
+          </div> 
+      </div>
+      <a href="https://www.imdb.com/title/tt1528406/?ref_=nv_sr_srsg_0" target="blank" class="btn btn-sm text-white">IMDB</a>
+    </div>
+  </td>
+</tr>
+
+</table><br><br>
+                              <!--pagination-->
+<div>
+    <ul class="pagination justify-content-center" >
+      <li class="page-item"><a class="page-link text-white" href="/Letterboxd/HOLLYWOOD/Hollywood.html"  style="background-color: black;">Hollywood</a></li>
+      <li class="page-item"><a class="page-link text-white" href="/Letterboxd/KOLLYWOOD/Kollywood.html"  style="background-color: black;">Kollywood</a></li>
+      <li class="page-item"><a class="page-link text-white" href="#"  style="background-color: black">Anime</a></li>
+      <li class="page-item"><a class="page-link text-white" href="/Letterboxd/More/More.html"  style="background-color: black;">More....</a></li>
+    </ul>
+</div>
+<div id="aboutus"class="jumbotron jumbotron-fluid" style="text-align: center;background-color: black;"> 
+  <a href="#" style="color: white;text-decoration: none;">Letterboxd@gmail.com</a><br>
+  <a href="#" style="color: white;text-decoration: none;">www.Letterboxd.com</a><br>
+  <a href="#" style="color: white;text-decoration: none;">@_Letter_boxd</a><br>
+  <button type="button" class="btn text-primary" data-toggle="modal" data-target="#myModal" id="logout">Logout</button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header"><h4>Logout</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button></div>
+        
+
+          <div class="modal-body">
+            <form class="form" action="/Letterboxd/Home.html">
+                <label for="email" class="mr-sm">Email address:</label>
+                <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Enter email" id="email">
+                <label for="pwd" class="mr-sm">Password:</label>
+                <input type="password" class="form-control mb-2 mr-sm-2" placeholder="Enter password" id="pwd"></h4>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </form>      
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>      
+</body>
+</html>

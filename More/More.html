@@ -11,6 +11,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-68px";
+  }
+}
+</script>
 
 
 </head>
@@ -18,7 +30,10 @@
                             <!--LETTERBOXD-->
     <div class="jumbotron mt-5  bg-warning text-black" style="font-size: 60px;font-family: paprika;opacity: 90%;text-align: center;">Letterboxd</div>
                             <!--NAVBAR-->
-  <div class="navbar navbar-sm  navbar-dark sticky-top" style="background-color: black;">
+  <div class="navbar navbar-sm  navbar-dark sticky-top" id="navbar"style="background-color: black;position: fixed;
+  top: -68px;
+  width: 100%;
+  transition: top 0.3s;">
                             <!--LOGO-Navbar-->
       <a class="navbar-brand" href="/index.html"><img src="/Images/Letterboxd.png"  style="width:40px;"></a>
                             <!--SEarch bar-->

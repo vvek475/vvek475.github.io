@@ -13,6 +13,25 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script>
+
+  function myFunction() {
+  var x = document.body;
+  var y=document.getElementById('but')
+  if (x.style.backgroundColor === "black") {
+    x.style.backgroundColor = "white";
+    x.style.color="black"
+    y.style.backgroundColor="white"
+    y.style.color='black'
+    
+  } else {
+    x.style.backgroundColor = "black";
+    x.style.color="white"
+    y.style.backgroundColor="black"
+    y.style.color='white'
+  }
+}
+</script>
+<script>
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 window.onscroll = function() {scrollFunction()};
 
@@ -66,7 +85,8 @@ function scrollFunction() {
       </div>
                             <!--LETTERBOXD-->
 <div class="jumbotron mt-5  bg-warning text-black" style="font-size: 60px;font-family: paprika;opacity: 90%;text-align: center;">Letterboxd</div>
-                            <!--NAVBAR-->
+    <button id="but" type="button" onclick="myFunction()">Click Me!</button>         
+<!--NAVBAR-->
       <nav class="navbar navbar-sm  sticky-top navbar-dark " id="navbar" style="background-color: black;
   position: fixed;
   top: -68px;

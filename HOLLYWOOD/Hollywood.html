@@ -18,11 +18,13 @@
   var x = document.body;
   var y=document.getElementById('but');
   var z = document.getElementsByClassName('card')
+  var nav=document.getElementById('navbar')
   if (x.style.backgroundColor === "black") {
     x.style.backgroundColor = "white";
     x.style.color="black"
     y.style.backgroundColor="white"
     y.style.color='black'
+    nav.style.backgroundColor='White'
  
     for (let i = 0; i < card.length; i++) {
         z[i].style.backgroundColor ='white'
@@ -35,6 +37,7 @@
     x.style.color="white"
     y.style.backgroundColor="black"
     y.style.color='white'
+    nav.style.backgroundColor='black'
     for (let i = 0; i < card.length; i++) {
       z[i].style.backgroundColor ='black'
       z[i].style.color='white'}

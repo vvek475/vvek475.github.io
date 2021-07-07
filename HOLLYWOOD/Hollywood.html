@@ -22,6 +22,7 @@
   var butn = document.getElementsByClassName('btn')
   var a = document.getElementsByClassName('a')
   var jb=document.getElementById('aboutus')
+  var page=document.getElementById('page')
    if (x.style.backgroundColor === "white") {
     x.style.backgroundColor = "black";
     x.style.color="white"
@@ -29,6 +30,7 @@
     y.style.color='white'
     nav.style.backgroundColor='black'
     jb.style.backgroundColor='black'
+    page.style.backgroundColor='black'
       for (let i=0;i<a.length;i++){
       a.style.backgroundColor='black'
       a.style.color='white'
@@ -37,7 +39,7 @@
     for (let i = 0; i < 8; i++) {
       z[i].style.backgroundColor ='black'
       z[i].style.color='white'}
-    for (let i=0;i<17;i++){
+    for (let i=0;i<18;i++){
       butn[i].style.color="white"}}
 
   else{
@@ -47,6 +49,7 @@
     y.style.color='black'
     nav.style.backgroundColor='White'
     jb.style.backgroundColor='white'
+    page.style.backgroundColor='white'
     for (let i=0;i<a.length;i++){
       a.style.backgroundColor='white'
       a.style.color='black'
@@ -56,7 +59,7 @@
     for (let i = 0; i < 8; i++) {
         z[i].style.backgroundColor ='white'
         z[i].style.color='black'}
-    for (let i=0;i<17;i++){
+    for (let i=0;i<18;i++){
         butn[i].style.color="black"}
 
 
@@ -120,8 +123,8 @@ function scrollFunction() {
       </div>
            
                             <!--LETTERBOXD-->
-<div class="jumbotron mt-5  bg-warning text-black" style="font-size: 60px;font-family: paprika;opacity: 90%;text-align: center;">
-<a class="btn btn-link" onclick="myFunction()"
+<div class="jumbotron mt-5  bg-warning text-black" style="opacity: 90%;text-align: center;">
+<a class="btn btn-link text-dark" onclick="myFunction()"
 style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;text-align: center;">Letterboxd</a></div>
        
 <!--NAVBAR-->
@@ -314,7 +317,7 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
             </div>
           </div> 
         </div>
-        <a href="https://www.imdb.com/title/tt6334354/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm "style="color:white">IMDB</a>
+        <a href="https://www.imdb.com/title/tt6334354/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm " style="color:white">IMDB</a>
       </div>
     </td>
                               <!--this is Dune-->
@@ -333,7 +336,7 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
             </div>
           </div> 
         </div>
-        <a href="https://www.imdb.com/title/tt1160419/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm "style="color:white">IMDB</a>
+        <a href="https://www.imdb.com/title/tt1160419/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm" style="color:white">IMDB</a>
       </div>
     </td>
   </tr>
@@ -343,19 +346,19 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
 
 <br><br>
                             <!--pagination-->
-<div style="display: block;opacity: 90%;" class="jumbtron bg-warning">
+<div style="display: block;opacity: 90%;background-color: black;" class="jumbtron" id='page'>
     <ul class="pagination justify-content-center" >
-      <li class="page-item"><a class="page-link bg-warning text-50 border border-secondary-4" href="#"  style="background-color: black;">Hollywood</a></li>
-      <li class="page-item"><a class="page-link bg-warning text-50 border border-secondary-4" href="/KOLLYWOOD/Kollywood.html"  style="background-color: black;">Kollywood</a></li>
-      <li class="page-item"><a class="page-link bg-warning text-50 border border-secondary-4" href="/ANIME/Anime.html"  style="background-color: black;">Anime</a></li>
-      <li class="page-item"><a class="page-link bg-warning text-50 border border-secondary-4" href="/More/More.html"  style="background-color: black;">More....</a></li>
+      <li class="page-item"><a class="page-link  text-warning border border-none" href="#"  style="background-color:transparent">Hollywood</a></li>
+      <li class="page-item"><a class="page-link  text-warning border border-secondary-4" href="/KOLLYWOOD/Kollywood.html"  style="background-color: transparent">Kollywood</a></li>
+      <li class="page-item"><a class="page-link  text-warning border border-secondary-4" href="/ANIME/Anime.html"  style="background-color: transparent">Anime</a></li>
+      <li class="page-item"><a class="page-link  text-warning border border-secondary-4" href="/More/More.html"  style="background-color:transparent">More....</a></li>
     </ul>
 </div><br><br>
 <div id="aboutus"class="jumbotron jumbotron-fluid" style="text-align: center;opacity: 90%;background-color: black;"> 
-  <a href="#" style="text-decoration: none;">Letterboxd@gmail.com</a><br>
-  <a href="#" style="text-decoration: none;">www.Letterboxd.com</a><br>
-  <a href="#" style="text-decoration: none;">@_Letter_boxd</a><br>
-  <button type="button" class="btn text-primary" data-toggle="modal" data-target="#myModal" id="logout">Logout</button>
+  <a href="#" style="text-decoration: none;color:gold">Letterboxd@gmail.com</a><br>
+  <a href="#" style="text-decoration: none;color: gold;">www.Letterboxd.com</a><br>
+  <a href="#" style="text-decoration: none;color: gold;">@_Letter_boxd</a><br>
+  <button type="button" class="btn text-warning" data-toggle="modal" data-target="#myModal" id="logout">Logout</button>
 
                             <!-- The Modal -->
   <div class="modal" id="myModal">

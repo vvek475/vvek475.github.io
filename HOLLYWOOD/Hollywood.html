@@ -19,19 +19,20 @@
   var y=document.getElementById('but');
   var z = document.getElementsByClassName('card')
   var nav=document.getElementById('navbar')
-  var butn = document.getElementsByClassName('button')
+  var butn = document.getElementsByClassName('btn')
   if (x.style.backgroundColor === "black") {
     x.style.backgroundColor = "white";
     x.style.color="black"
     y.style.backgroundColor="white"
     y.style.color='black'
     nav.style.backgroundColor='White'
-    butn.style.color="black"
+    
  
     for (let i = 0; i < 8; i++) {
         z[i].style.backgroundColor ='white'
         z[i].style.color='black'
 }
+butn.style.color="black"
 
     
   } else {
@@ -40,11 +41,13 @@
     y.style.backgroundColor="black"
     y.style.color='white'
     nav.style.backgroundColor='black'
-    butn.style.color="white"
+
     for (let i = 0; i < 8; i++) {
       z[i].style.backgroundColor ='black'
       z[i].style.color='white'}
-  }
+  butn.style.color="white"
+    }
+
 }
 </script>
 <script>

@@ -16,15 +16,18 @@
 
   function myFunction() {
   var x = document.body;
-  var y=document.getElementById('but')
+  var y=document.getElementById('but');
   var z = document.getElementsByClassName('card')
   if (x.style.backgroundColor === "black") {
     x.style.backgroundColor = "white";
     x.style.color="black"
     y.style.backgroundColor="white"
     y.style.color='black'
-    z.style.backgroundColor ='white'
-    z.style.color='black'
+ 
+    for (let i = 0; i < 8; i++) {
+        z[i].style.backgroundColor ='white'
+        z[i].style.color='black'
+}
 
     
   } else {
@@ -32,8 +35,9 @@
     x.style.color="white"
     y.style.backgroundColor="black"
     y.style.color='white'
-    z.style.backgroundColor ='black'
-    z.style.color='white'
+      for (let i = 0; i < 8; i++) {
+    z[i].style.backgroundColor ='black'
+    z[i].style.color='white'}
   }
 }
 </script>
@@ -143,7 +147,7 @@ function scrollFunction() {
                             <!--THIS IS THE TOMORROW WAR-->
   <tr>
     <td style="align-items: center;">
-    <div class="card" style="width: 200px; background-color:black">
+    <div class="card" style="width: 200px; background-color:black" id='ok'>
       <img class="card-img-top" src="The_Tomorrow_War.jpg"  style="width:200px;margin-right: 5;align-content: center;">
       <div class="card-body">
         <h4 class="card-title" style="font-size: 50px;"></h4>

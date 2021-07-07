@@ -20,12 +20,17 @@
   var z = document.getElementsByClassName('card')
   var nav=document.getElementById('navbar')
   var butn = document.getElementsByClassName('btn')
+  var a = document.getElementsByClassName('a')
   if (x.style.backgroundColor === "black") {
     x.style.backgroundColor = "white";
     x.style.color="black"
     y.style.backgroundColor="white"
     y.style.color='black'
     nav.style.backgroundColor='White'
+    for (let i=0;i<a.length;i++){
+      a.style.backgroundColor='white'
+      a.style.color='black'
+    }
     
  
     for (let i = 0; i < 8; i++) {
@@ -43,6 +48,10 @@
     y.style.backgroundColor="black"
     y.style.color='white'
     nav.style.backgroundColor='black'
+      for (let i=0;i<a.length;i++){
+      a.style.backgroundColor='black'
+      a.style.color='white'
+    }
 
     for (let i = 0; i < 8; i++) {
       z[i].style.backgroundColor ='black'

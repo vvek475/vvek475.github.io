@@ -22,7 +22,25 @@
   var butn = document.getElementsByClassName('btn')
   var a = document.getElementsByClassName('a')
   var jb=document.getElementById('aboutus')
-  if (x.style.backgroundColor === "black") {
+   if (x.style.backgroundColor === "white") {
+    x.style.backgroundColor = "black";
+    x.style.color="white"
+    y.style.backgroundColor="black"
+    y.style.color='white'
+    nav.style.backgroundColor='black'
+    jb.style.backgroundColor='black'
+      for (let i=0;i<a.length;i++){
+      a.style.backgroundColor='black'
+      a.style.color='white'
+    }
+
+    for (let i = 0; i < 8; i++) {
+      z[i].style.backgroundColor ='black'
+      z[i].style.color='white'}
+    for (let i=0;i<17;i++){
+      butn[i].style.color="white"}}
+
+  else{
     x.style.backgroundColor = "white";
     x.style.color="black"
     y.style.backgroundColor="white"
@@ -39,28 +57,11 @@
         z[i].style.backgroundColor ='white'
         z[i].style.color='black'}
     for (let i=0;i<17;i++){
-        butn[i].style.color="black"
-}
+        butn[i].style.color="black"}
 
 
     
-  } else {
-    x.style.backgroundColor = "black";
-    x.style.color="white"
-    y.style.backgroundColor="black"
-    y.style.color='white'
-    nav.style.backgroundColor='black'
-    jb.style.backgroundColor='black'
-      for (let i=0;i<a.length;i++){
-      a.style.backgroundColor='black'
-      a.style.color='white'
-    }
-
-    for (let i = 0; i < 8; i++) {
-      z[i].style.backgroundColor ='black'
-      z[i].style.color='white'}
-    for (let i=0;i<17;i++){
-      butn[i].style.color="white"}
+  
     }
 
 }

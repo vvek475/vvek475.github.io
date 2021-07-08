@@ -11,6 +11,57 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+  function myFunction() {
+  var x = document.body;
+  var y=document.getElementById('but');
+  var z = document.getElementsByClassName('card')
+  var nav=document.getElementById('navbar')
+  var butn = document.getElementsByClassName('btn')
+
+  var jb=document.getElementById('aboutus')
+  var page=document.getElementById('page')
+   if (x.style.backgroundColor === "white") {
+    x.style.backgroundColor = "black";
+    x.style.color="white"
+    y.style.backgroundColor="black"
+    y.style.color='white'
+    nav.style.backgroundColor='black'
+    jb.style.backgroundColor='black'
+    page.style.backgroundColor='black'
+   
+
+    for (let i = 0; i < 4; i++) {
+      z[i].style.backgroundColor ='black'
+      z[i].style.color='white'}
+    for (let i=0;i<12;i++){
+      butn[i].style.color="white"}}
+
+  else{
+    x.style.backgroundColor = "white";
+    x.style.color="black"
+    y.style.backgroundColor="black"
+    y.style.color='black'
+    nav.style.backgroundColor='White'
+    jb.style.backgroundColor='white'
+    page.style.backgroundColor='white'
+
+    
+ 
+    for (let i = 0; i < 4; i++) {
+        z[i].style.backgroundColor ='white'
+        z[i].style.color='black'}
+    for (let i=0;i<12;i++){
+        butn[i].style.color="black"}
+
+
+    
+  
+    }
+
+}
+</script>
   <script>
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 window.onscroll = function() {scrollFunction()};
@@ -55,18 +106,21 @@ function scrollFunction() {
       </a>
     </div>
                             <!--LETTERBOXD-->
-    <div class="jumbotron mt-5  bg-warning text-black" style="font-size: 60px;font-family: paprika;opacity: 90%;text-align: center;">Letterboxd</div>
+   <div class="jumbotron mt-5  bg-warning text-black" style="opacity: 90%;text-align: center;">
+<a class="btn btn-link text-dark" onclick="myFunction()"
+style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;text-align: center;">Letterboxd</a></div>
                             <!--NAVBAR-->
-  <div class="navbar navbar-sm  navbar-dark " id="navbar"style="background-color: black;position: fixed;
+  <nav class="navbar navbar-sm sticky-top navbar-dark " id="navbar"style="background-color: black;position: fixed;
   top: -68px;
   width: 100%;
   transition: top 0.3s;">
                             <!--LOGO-Navbar-->
-      <a class="navbar-brand" href="/index.html"><img src="/Images/Letterboxd.png"  style="width:40px;"></a>
+            <span><a  id="but"  style="background-color: black;" onclick="myFunction()"> 
+                <img src="/Images/Letterboxd.png"  style="width:40px;"></a></span>
                             <!--SEarch bar-->
           <form class="form-inline" action="/index.html" >
             <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-dark" type="submit">Search</button>
+            <button class="btn btn-warning" type="submit">Search</button>
           </form>
                     <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -77,13 +131,14 @@ function scrollFunction() {
                   
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
+
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Home</a>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="/HOLLYWOOD/Hollywood.html">Hollywood</a>
             <a class="dropdown-item" href="/KOLLYWOOD/Kollywood.html">Kollywood</a>
             <a class="dropdown-item" href="#">Anime</a>
-          </div>
+      
         </li>
         <li class="navbar-item"><a class="nav-link" href="#logout">Logout</a></li>
         <li class="navbar-item"><a class="nav-link" href="#aboutus">About Us</a></li>
@@ -95,14 +150,15 @@ function scrollFunction() {
       <span class="navbar-text text-white">Thank you Visit Us again</span>
       
     </div>
-  </div><br><br>
+  </nav>
+  <br><br>
   <div style="margin-left:50px;">
   <table class="table-borderless center" style="width: 90%;margin-left: auto;margin-right: auto;">
                             <!--THIS IS FIRST ROW-->
                             <!--THIS IS Naruto-->
   <tr>
     <td>
-      <div class="card" style="width:200px ;background-color:black">
+      <div class="card" style="width:200px ;opacity:90%;background-color:black">
         <img class="card-img-top" src="Naruto.jpg" style="width: 198px;margin-right: 5;height: 280px">
         <div class="card-body"><h4 class="card-title" style="font-size: 50px;"></h4>
                                 <!--Collpsible-->
@@ -116,12 +172,12 @@ function scrollFunction() {
             </div>
           </div>
         </div>
-          <a href="https://www.imdb.com/title/tt0988824/?ref_=nv_sr_srsg_2" target="blank" class="btn btn-sm text-white">IMDB</a>
+          <a href="https://www.imdb.com/title/tt0988824/?ref_=nv_sr_srsg_2" target="blank" class="btn btn-sm " style="color: white;">IMDB</a>
       </div>
      </td>
                             <!--THIS IS Dragon Ball Z-->
     <td>
-      <div class="card" style="width:200px;background-color:black">
+      <div class="card" style="width:200px;opacity:90%;background-color:black">
         <img class="card-img-top" src="DragonBall.jpg" alt="Card image" style="width: 198px;margin-right: 5;height: 280px">
 
         <div class="card-body"><h4 class="card-title" style="font-size: 50px;"></h4>
@@ -135,12 +191,12 @@ function scrollFunction() {
             </div>
           </div>
         </div>
-        <a href="https://www.imdb.com/title/tt4644488/?ref_=nv_sr_srsg_6" target="blank" class="btn btn-sm text-white">IMDB</a>
+        <a href="https://www.imdb.com/title/tt4644488/?ref_=nv_sr_srsg_6" target="blank" class="btn btn-sm " style="color: white;">IMDB</a>
       </div>                           
     </td>
                              <!--THIS IS Boruto-->
     <td>
-      <div class="card" style="width:200px;background-color:black">
+      <div class="card" style="width:200px;opacity:90%;background-color:black">
         <img class="card-img-top" src="boruto.jpg" alt="Card image" style="width: 198px;margin-right: 5;height: 280px;">
 
         <div class="card-body">
@@ -154,18 +210,18 @@ function scrollFunction() {
             </div>
           </div>    
         </div>
-        <a href="https://www.imdb.com/title/tt6342474/?ref_=nv_sr_srsg_0" target="blank" class="btn btn-sm text-white">IMDB</a>
+        <a href="https://www.imdb.com/title/tt6342474/?ref_=nv_sr_srsg_0" target="blank" class="btn btn-sm " style="color: white;">IMDB</a>
       </div>
   </td>
                              <!--THIS IS Fairy Tail-->
   <td>  
-    <div class="card" style="width:200px;background-color:black">
+    <div class="card" style="width:200px;opacity:90%;background-color:black">
       <img class="card-img-top" src="fairytail.jpg" alt="Card image" style="width: 198px;margin-right: 5;height: 280px">
 
       <div class="card-body">
         <h4 class="card-title" style="font-size: 50px;"></h4>
          <button type="button" class="btn btn-sm ml-4 " style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
-          data-toggle="collapse" data-target="#demo3"><pre style="color: white;font-family: paprika;">    Fairy Tail</pre></button>
+          data-toggle="collapse" data-target="#demo3">Fairy  Tail</button>
           <div id="demo3" class="collapse">
             <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
               Lucy, an aspiring Celestial Wizard, becomes a friend and ally to powerful wizards Natsu, Gray, and Erza, who are part of the (in)famous wizard guild, Fairy Tail.<br><br>
@@ -174,7 +230,7 @@ function scrollFunction() {
             </div>
           </div> 
       </div>
-      <a href="https://www.imdb.com/title/tt1528406/?ref_=nv_sr_srsg_0" target="blank" class="btn btn-sm text-white">IMDB</a>
+      <a href="https://www.imdb.com/title/tt1528406/?ref_=nv_sr_srsg_0" target="blank" class="btn btn-sm " style="color: white;">IMDB</a>
     </div>
   </td>
 </tr>
@@ -182,19 +238,20 @@ function scrollFunction() {
 </table>
 </div><br><br>
                               <!--pagination-->
-<div>
+<div style="display: block;opacity: 90%;background-color: black;" class="jumbtron" id='page'>
     <ul class="pagination justify-content-center" >
-      <li class="page-item"><a class="page-link text-white" href="/HOLLYWOOD/Hollywood.html"  style="background-color: black;">Hollywood</a></li>
-      <li class="page-item"><a class="page-link text-white" href="/KOLLYWOOD/Kollywood.html"  style="background-color: black;">Kollywood</a></li>
-      <li class="page-item"><a class="page-link text-white" href="#"  style="background-color: black">Anime</a></li>
-      <li class="page-item"><a class="page-link text-white" href="/More/More.html"  style="background-color: black;">More....</a></li>
+      <li class="page-item"><a class="page-link  text-warning" href="/HOLLYWOOD/Hollywood.html"  style="background-color:transparent">Hollywood</a></li>
+      <li class="page-item"><a class="page-link  text-warning" href="/KOLLYWOOD/Kollywood.html"  style="background-color: transparent">Kollywood</a></li>
+      <li class="page-item"><a class="page-link  text-warning " href="#"  style="background-color: transparent">Anime</a></li>
+      <li class="page-item"><a class="page-link  text-warning" href="/More/More.html"  style="background-color:transparent">More....</a></li>
     </ul>
+</div><br><br>
+<div id="aboutus"class="jumbotron jumbotron-fluid" style="text-align: center;opacity:90%;background-color: black;"> 
+  <a href="#" class="text-warning"style="text-decoration: none;">Letterboxd@gmail.com</a><br>
+  <a href="#" class="text-warning"style="text-decoration: none;">www.Letterboxd.com</a><br>
+  <a href="#" class="text-warning"style="text-decoration: none;">@_Letter_boxd</a><br>
+  <a type="button" class="btn text-warning" style="opacity:100%"data-toggle="modal" data-target="#myModal" id="logout">Logout</a>
 </div>
-<div id="aboutus"class="jumbotron jumbotron-fluid" style="text-align: center;background-color: black;"> 
-  <a href="#" style="color: white;text-decoration: none;">Letterboxd@gmail.com</a><br>
-  <a href="#" style="color: white;text-decoration: none;">www.Letterboxd.com</a><br>
-  <a href="#" style="color: white;text-decoration: none;">@_Letter_boxd</a><br>
-  <button type="button" class="btn text-primary" data-toggle="modal" data-target="#myModal" id="logout">Logout</button>
 
   <!-- The Modal -->
   <div class="modal" id="myModal">

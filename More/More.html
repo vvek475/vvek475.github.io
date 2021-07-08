@@ -26,7 +26,7 @@ function scrollFunction() {
 
 
 </head>
-<body style="background-image:url('/Letterboxd/Images/Background.png');background-size:cover;height: 100vh;width: 100%; ">
+<body style="background-image:url('/Images/Background.png');background-size:cover;height: 100vh;width: 100%; ">
                             <!--LETTERBOXD-->
     <div class="jumbotron mt-5  bg-warning text-black" style="font-size: 60px;font-family: paprika;opacity: 90%;text-align: center;">Letterboxd</div>
                             <!--NAVBAR-->
@@ -78,19 +78,20 @@ function scrollFunction() {
 <iframe src="/ANIME/Anime.html"style="border: none;background-color: rgb(0, 0, 0);height: 600px;width: 100%;" title="Anime"></iframe>
 <br><br>
                             <!--pagination-->
-<div>
+<div style="display: block;opacity: 90%;background-color: black;" class="jumbtron" id='page'>
     <ul class="pagination justify-content-center" >
-      <li class="page-item"><a class="page-link text-white" href="/HOLLYWOOD/Hollywood.html"  style="background-color: black;">Hollywood</a></li>
-      <li class="page-item"><a class="page-link text-white" href="/KOLLYWOOD/Kollywood.html"  style="background-color: black;">Kollywood</a></li>
-      <li class="page-item"><a class="page-link text-white" href="/ANIME/Anime.html"  style="background-color: black">Anime</a></li>
-      <li class="page-item"><a class="page-link text-white" href="#"  style="background-color: black;">More....</a></li>
+      <li class="page-item"><a class="page-link  text-warning" href="/HOLLYWOOD/Hollywood.html"  style="background-color:transparent">Hollywood</a></li>
+      <li class="page-item"><a class="page-link  text-warning" href="#"  style="background-color: transparent">Kollywood</a></li>
+      <li class="page-item"><a class="page-link  text-warning " href="/ANIME/Anime.html"  style="background-color: transparent">Anime</a></li>
+      <li class="page-item"><a class="page-link  text-warning" href="/More/More.html"  style="background-color:transparent">More....</a></li>
     </ul>
+</div><br><br>
+<div id="aboutus"class="jumbotron jumbotron-fluid" style="text-align: center;opacity:90%;background-color: black;"> 
+  <a href="#" class="text-warning"style="text-decoration: none;">Letterboxd@gmail.com</a><br>
+  <a href="#" class="text-warning"style="text-decoration: none;">www.Letterboxd.com</a><br>
+  <a href="#" class="text-warning"style="text-decoration: none;">@_Letter_boxd</a><br>
+  <a type="button" class="btn text-warning" style="opacity:100%"data-toggle="modal" data-target="#myModal" id="logout">Logout</a>
 </div>
-<div id="aboutus"class="jumbotron jumbotron-fluid" style="text-align: center;background-color: black;"> 
-  <a href="#" style="color: white;text-decoration: none;">Letterboxd@gmail.com</a><br>
-  <a href="#" style="color: white;text-decoration: none;">www.Letterboxd.com</a><br>
-  <a href="#" style="color: white;text-decoration: none;">@_Letter_boxd</a><br>
-  <button type="button" class="btn text-primary" data-toggle="modal" data-target="#myModal" id="logout">Logout</button>
 
   <!-- The Modal -->
   <div class="modal" id="myModal">

@@ -11,6 +11,37 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+  function myFunction() {
+  var x = document.body;
+ 
+  var z = document.getElementsByClassName('card')
+  var nav=document.getElementById('navbar')
+  var butn = document.getElementsByClassName('btn')
+
+  var jb=document.getElementById('aboutus')
+  var page=document.getElementById('page')
+   if (x.style.backgroundColor === "white") {
+    x.style.backgroundColor = "black";
+    x.style.color="white"
+    nav.style.backgroundColor='black'
+    jb.style.backgroundColor='black'
+    page.style.backgroundColor='black'}
+
+
+
+
+
+  else{
+
+    x.style.backgroundColor = "white";
+    x.style.color="black"
+    nav.style.backgroundColor='White'
+    jb.style.backgroundColor='white'
+    page.style.backgroundColor='white'
+    }
+}
+</script>
   <script>
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 window.onscroll = function() {scrollFunction()};
@@ -28,22 +59,25 @@ function scrollFunction() {
 </head>
 <body style="background-image:url('/Images/Background.png');background-size:cover;height: 100vh;width: 100%; ">
                             <!--LETTERBOXD-->
-    <div class="jumbotron mt-5  bg-warning text-black" style="font-size: 60px;font-family: paprika;opacity: 90%;text-align: center;">Letterboxd</div>
+ <div class="jumbotron mt-5  bg-warning text-black" style="opacity: 90%;text-align: center;">
+<a class="btn btn-link text-dark" onclick="myFunction()"
+style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;text-align: center;">Letterboxd</a></div>
                             <!--NAVBAR-->
   <div class="navbar navbar-sm  navbar-dark sticky-top" id="navbar"style="background-color: black;opacity:80%;position: fixed;
   top: -68px;
   width: 100%;
   transition: top 0.3s;">
                             <!--LOGO-Navbar-->
-      <a class="navbar-brand" href="/index.html"><img src="/Images/Letterboxd.png"  style="width:40px;"></a>
+       <span><a  id="but"  style="background-color: black;" onclick="myFunction()"> 
+                <img src="/Images/Letterboxd.png"  style="width:40px;"></a></span>
                             <!--SEarch bar-->
           <form class="form-inline" action="/index.html" >
             <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-dark" type="submit">Search</button>
+            <button class="btn btn-warning" type="submit">Search</button>
           </form>
                     <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon bg-warning"></span>
         </button>
 
                                 <!-- Navbar links -->

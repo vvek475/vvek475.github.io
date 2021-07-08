@@ -18,6 +18,7 @@
   var z = document.getElementsByClassName('card')
   var nav=document.getElementById('navbar')
   var butn = document.getElementsByClassName('btn')
+  var jum=document.getElementsByClassName('jumbotron')
 
   var jb=document.getElementById('aboutus')
   var page=document.getElementById('page')
@@ -26,7 +27,12 @@
     x.style.color="white"
     nav.style.backgroundColor='black'
     jb.style.backgroundColor='black'
-    page.style.backgroundColor='black'}
+    page.style.backgroundColor='black'
+    for (let i =0;i<4;i++){
+      jum.style.backgroundColor="black"
+      jum.style.color="white"
+    }
+  }
 
 
 
@@ -39,6 +45,10 @@
     nav.style.backgroundColor='White'
     jb.style.backgroundColor='white'
     page.style.backgroundColor='white'
+     for (let i =0;i<4;i++){
+      jum.style.backgroundColor="white"
+      jum.style.color="black"
+    }
     }
 }
 </script>
@@ -85,21 +95,21 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Home</a>
+        <a class="nav-link dropdown-toggle text-warning" href="#" id="navbardrop" data-toggle="dropdown">Home</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#Hollywood">Hollywood</a>
-            <a class="dropdown-item" href="#Kollywood">Kollywood</a>
-            <a class="dropdown-item" href="#Anime">Anime</a>
+            <a class="dropdown-item text-warning" href="#Hollywood">Hollywood</a>
+            <a class="dropdown-item text-warning" href="#Kollywood">Kollywood</a>
+            <a class="dropdown-item text-warning" href="#Anime">Anime</a>
           </div>
         </li>
-        <li class="navbar-item"><a class="nav-link" href="#logout">Logout</a></li>
-        <li class="navbar-item"><a class="nav-link" href="#aboutus">About Us</a></li>
+        <li class="navbar-item"><a class="nav-link text-warning" href="#logout">Logout</a></li>
+        <li class="navbar-item"><a class="nav-link text-warning" href="#aboutus">About Us</a></li>
                           <!--Sliding Bar-->
-        <li><label for="customRange"  style="color: rgb(255, 255, 255);">Rate Us
-          <pre style="color:royalblue">1     2     3     4     5</pre></label><br>
+        <li><label for="customRange"  style="color:gold">Rate Us
+          <pre style="color:gold">1     2     3     4     5</pre></label><br>
           <input type="range" class="custom-range" id="customRange" name="points2" style="width: 200px;"></li>
       </ul>
-      <span class="navbar-text text-white">Thank you Visit Us again</span>
+      <span class="navbar-text text-warning">Thank you Visit Us again</span>
       
     </div>
   </div><br><br>
@@ -114,16 +124,16 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
                             <!--pagination-->
 <div style="display: block;opacity: 90%;background-color: black;" class="jumbtron" id='page'>
     <ul class="pagination justify-content-center" >
-      <li class="page-item"><a class="page-link  text-warning" href="/HOLLYWOOD/Hollywood.html"  style="background-color:transparent">Hollywood</a></li>
-      <li class="page-item"><a class="page-link  text-warning" href="#"  style="background-color: transparent">Kollywood</a></li>
-      <li class="page-item"><a class="page-link  text-warning " href="/ANIME/Anime.html"  style="background-color: transparent">Anime</a></li>
-      <li class="page-item"><a class="page-link  text-warning" href="/More/More.html"  style="background-color:transparent">More....</a></li>
+      <li class="page-item"><a class="page-link  text-warning" href="/HOLLYWOOD/Hollywood.html"  style="background-color:transparent;font-size:larger ">Hollywood</a></li>
+      <li class="page-item"><a class="page-link  text-warning" href="/KOLLYWOOD/Kollywood.html"  style="background-color: transparent;font-size:larger ">Kollywood</a></li>
+      <li class="page-item"><a class="page-link  text-warning " href="/ANIME/Anime.html"  style="background-color: transparent;font-size:larger ">Anime</a></li>
+      <li class="page-item"><a class="page-link  text-warning" href="#"  style="background-color:transparent;font-size:larger ">More....</a></li>
     </ul>
 </div><br><br>
 <div id="aboutus"class="jumbotron jumbotron-fluid" style="text-align: center;opacity:90%;background-color: black;"> 
-  <a href="#" class="text-warning"style="text-decoration: none;">Letterboxd@gmail.com</a><br>
-  <a href="#" class="text-warning"style="text-decoration: none;">www.Letterboxd.com</a><br>
-  <a href="#" class="text-warning"style="text-decoration: none;">@_Letter_boxd</a><br>
+  <a href="#" class="text-warning"style="text-decoration: none;font-size:larger ">Letterboxd@gmail.com</a><br>
+  <a href="#" class="text-warning"style="text-decoration: none;font-size:larger ">www.Letterboxd.com</a><br>
+  <a href="#" class="text-warning"style="text-decoration: none;font-size:larger ">@_Letter_boxd</a><br>
   <a type="button" class="btn text-warning" style="opacity:100%"data-toggle="modal" data-target="#myModal" id="logout">Logout</a>
 </div>
 

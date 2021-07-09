@@ -16,6 +16,7 @@
 
   function myFunction() {
   var x = document.body;
+
   var z = document.getElementsByClassName('card')
   var nav=document.getElementById('navbar')
   var butn = document.getElementsByClassName('btn')
@@ -24,7 +25,8 @@
   var page=document.getElementById('page')
    if (x.style.backgroundColor === "white") {
     x.style.backgroundColor = "black";
-    x.style.color="white"
+    x.style.color="black"
+
     nav.style.backgroundColor='black'
     jb.style.backgroundColor='black'
     page.style.backgroundColor='black'
@@ -32,7 +34,6 @@
       a.style.backgroundColor='black'
       a.style.color='white'
     }
-
     for (let i = 0; i < 8; i++) {
       z[i].style.backgroundColor ='black'
       z[i].style.color='black'}
@@ -42,6 +43,7 @@
   else{
     x.style.backgroundColor = "white";
     x.style.color="black"
+
     nav.style.backgroundColor='White'
     jb.style.backgroundColor='white'
     page.style.backgroundColor='white'
@@ -116,12 +118,21 @@ function scrollFunction() {
           <span class="carousel-control-next-icon"></span>
         </a>
       </div>
+      <br><br>
+      <div class="alert alert alert-dismissible mx-auto bg-warning" style="width: 50%;opacity:90%;text-align: center;">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Scroll down</strong>  &nbsp;&nbsp; to get navigation bar on top
+  </div>  
            
                             <!--LETTERBOXD-->
 <div class="jumbotron mt-5  bg-warning text-black" style="opacity: 90%;text-align: center;">
 <a class="btn btn-link text-dark" onclick="myFunction()"
-style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;text-align: center;">Letterboxd</a></div>
-       
+style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;text-align: center;">Letterboxd</a>
+</div>
+<div class="alert alert alert-dismissible mx-auto bg-warning" style="width: 50%;opacity:90%;text-align: center;">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    Click&nbsp;&nbsp;<strong>Letterboxd</strong>  &nbsp;&nbsp;  to toggle theme
+  </div>       
 <!--NAVBAR-->
       <nav class="navbar navbar-sm  sticky-top navbar-dark " id="navbar" style="background-color: black;opacity:80%;position: fixed;
   top: -68px;
@@ -164,7 +175,12 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
           </span>
       </div>
       
-    </nav><br><br>
+    </nav><br>
+    <div class="alert alert alert-dismissible mx-auto bg-warning" style="width: 50%;opacity:90%;text-align: center;">
+    <button type="button" class="close" data-dismiss="alert">&times;</button><br>
+    Click&nbsp;&nbsp;<strong>Movie name</strong>  &nbsp;&nbsp; for Movie Info<br><br>
+    Click <strong>IMDB </strong>button to move to IMDB site of the movie <br>
+  </div><br>
     <div style="margin-left:50px;">
   <table class="table-borderless center" style="width: 90%;margin-left: auto;margin-right: auto;">
                             <!--THIS IS FIRST ROW-->
@@ -252,6 +268,9 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
       <a href="https://www.imdb.com/title/tt0870154/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm "style="color:white">IMDB</a>
     </div></td>
 </tr>
+
+     
+           
                             <!--THIS IS NEXT ROW-->
                             <!--THIS IS BATMAN-->
 
@@ -347,12 +366,22 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
       <li class="page-item"><a class="page-link  text-warning border border-secondary-4" href="/ANIME/Anime.html"  style="background-color: transparent;font-size:larger ">Anime</a></li>
       <li class="page-item"><a class="page-link  text-warning border border-secondary-4" href="/More/More.html"  style="background-color:transparent;font-size:larger ">More....</a></li>
     </ul>
-</div><br><br>
+</div>
+<br>
+<div class="alert alert alert-dismissible mx-auto bg-warning" style="width: 50%;opacity:90%;text-align: center;">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    Click &nbsp;&nbsp;<strong>Page Name</strong>  &nbsp;&nbsp;  to move to next page.
+  </div>   
+<br>
 <div id="aboutus"class="jumbotron jumbotron-fluid" style="text-align: center;opacity:90%;background-color: black;"> 
   <a href="#" class="text-warning"style="text-decoration: none;font-size:larger ">Letterboxd@gmail.com</a><br>
   <a href="#" class="text-warning"style="text-decoration: none;font-size:larger ">www.Letterboxd.com</a><br>
   <a href="#" class="text-warning"style="text-decoration: none;font-size:larger ">@_Letter_boxd</a><br>
   <a type="button" class="btn text-warning" style="opacity:100%;font-size:larger "data-toggle="modal" data-target="#myModal" id="logout">Logout</a>
+  <div class="alert alert alert-dismissible mx-auto bg-warning" style="width: 30%;text-align: center;">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    Click &nbsp; <strong> Logout</strong>  &nbsp;To Exit!
+  </div>       
 </div>
                             <!-- The Modal -->
   <div class="modal" id="myModal" style="opacity: 100%;">

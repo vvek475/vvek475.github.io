@@ -62,3 +62,6 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+a{
+    font-size: larger;
+}

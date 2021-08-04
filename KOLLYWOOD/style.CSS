@@ -65,3 +65,6 @@ body{
 .card-img-top{
     height: 260px;
 }
+a{
+    font-size: larger;
+}

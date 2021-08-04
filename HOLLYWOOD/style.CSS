@@ -46,10 +46,7 @@ body{
     width: 100%;
     transition: top 0.3s;
 }
-.page-item{
-    background-color:transparent;
-    font-size:larger
-}
+
 #page{
     display: block;
     opacity: 90%;

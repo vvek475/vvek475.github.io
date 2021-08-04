@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <title>Letterboxd</title>
-  <style>html{scroll-behavior: smooth;}
-  *{font-family: paprika;}</style>
-  <script>txt=screen.width</script>
+  
 
+
+  <link rel="stylesheet" href="style.CSS">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -16,34 +16,15 @@
 
   function myFunction() {
   var x = document.body;
-
   var z = document.getElementsByClassName('card')
   var nav=document.getElementById('navbar')
   var butn = document.getElementsByClassName('btn')
   var a = document.getElementsByClassName('a')
   var jb=document.getElementById('aboutus')
   var page=document.getElementById('page')
-   if (x.style.backgroundColor === "white") {
-    x.style.backgroundColor = "black";
-    x.style.color="black"
-
-    nav.style.backgroundColor='black'
-    jb.style.backgroundColor='black'
-    page.style.backgroundColor='black'
-      for (let i=0;i<a.length;i++){
-      a.style.backgroundColor='black'
-      a.style.color='white'
-    }
-    for (let i = 0; i < 8; i++) {
-      z[i].style.backgroundColor ='black'
-      z[i].style.color='black'}
-    for (let i=0;i<18;i++){
-      butn[i].style.color="white"}}
-
-  else{
+   if (x.style.backgroundColor === "black") {
     x.style.backgroundColor = "white";
     x.style.color="black"
-
     nav.style.backgroundColor='White'
     jb.style.backgroundColor='white'
     page.style.backgroundColor='white'
@@ -58,13 +39,28 @@
         z[i].style.color='black'}
     for (let i=0;i<18;i++){
         butn[i].style.color="black"}
+  }
 
 
-    
-  
+   
+  else{
+     x.style.backgroundColor = "black";
+    x.style.color="white"
+    nav.style.backgroundColor='black'
+    jb.style.backgroundColor='black'
+    page.style.backgroundColor='black'
+      for (let i=0;i<a.length;i++){
+      a.style.backgroundColor='black'
+      a.style.color='white'
     }
 
-}
+    for (let i = 0; i < 8; i++) {
+      z[i].style.backgroundColor ='black'
+      z[i].style.color='black'}
+    for (let i=0;i<18;i++){
+      butn[i].style.color="white"}}
+    }
+
 </script>
 <script>
 // When the user scrolls down 20px from the top of the document, slide down the navbar
@@ -81,7 +77,7 @@ function scrollFunction() {
 
 
 </head>
-<body style="background-image:url('/Images/Background.png');background-size:cover;height: 100vh;width: 100%; ">
+<body>
         
       <div id="demo" class="carousel slide" data-ride="carousel" >
       
@@ -117,36 +113,31 @@ function scrollFunction() {
         <a class="carousel-control-next" href="#demo" data-slide="next">
           <span class="carousel-control-next-icon"></span>
         </a>
-      </div>
-      <br><br>
-      <div class="alert alert alert-dismissible mx-auto bg-warning" style="width: 50%;opacity:90%;text-align: center;">
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-    <strong>Scroll down</strong>  &nbsp;&nbsp; to get navigation bar on top
-  </div>  
+        <br><br>
+        <div class="alert alert alert-dismissible mx-auto bg-warning" style="width: 50%;opacity:90%;text-align: center;">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Scroll down</strong>  &nbsp;&nbsp; to get navigation bar on top
+      </div></div>
            
                             <!--LETTERBOXD-->
-<div class="jumbotron mt-5  bg-warning text-black" style="opacity: 90%;text-align: center;">
-<a class="btn btn-link text-dark" onclick="myFunction()"
-style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;text-align: center;">Letterboxd</a>
-</div>
+<div class="jumbotron mt-5  bg-warning text-black" id="banner">
+<a class="btn btn-link text-dark" onclick="myFunction()" id='banner-link'
+>Letterboxd</a></div>
 <div class="alert alert alert-dismissible mx-auto bg-warning" style="width: 50%;opacity:90%;text-align: center;">
     <button type="button" class="close" data-dismiss="alert">&times;</button>
     Click&nbsp;&nbsp;<strong>Letterboxd</strong>  &nbsp;&nbsp;  to toggle theme
-  </div>       
+  </div> 
 <!--NAVBAR-->
-      <nav class="navbar navbar-sm  sticky-top navbar-dark " id="navbar" style="background-color: black;opacity:80%;position: fixed;
-  top: -68px;
-  width: 100%;
-  transition: top 0.3s;">
+      <nav class="navbar navbar-sm  sticky-top navbar-dark " id="navbar" >
           <a  id="but"  style="background-color: black;"onclick="myFunction()"> 
                 <img src="/Images/Letterboxd.png"  style="width:40px;"></a>
 
-        <form class="form-inline" action="/index.html" >
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-warning" type="submit">Search</button>
-        </form>
+        <!--<form class="form-inline" action="/index.html" >
+          <input class="form-control mr-sm-2 form-inline" type="text" placeholder="Search">
+          <button class="btn btn-warning form-inline" type="submit">Search</button>
+        </form>-->
               <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler bg-warning" type="button" style="opacity: 100%;" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <button class="navbar-toggler bg-warning" type="button"  data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon bg-warning" style="opacity: 100%;"></span>
         </button>
 
@@ -155,6 +146,7 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
           <ul class="navbar-nav">
           
             <li class="nav-item dropdown">
+              <br><br>
               <a class="nav-link dropdown-toggle text-warning" href="#" id="navbardrop" data-toggle="dropdown">Home</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item text-warning" href="#">Hollywood</a>
@@ -166,36 +158,35 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
               <a class="nav-link text-warning" href="#logout">Logout</a>
             </li>
             <li class="navbar-item"><a class="nav-link text-warning" href="#aboutus">About Us</a></li>
-              <li><label for="customRange"  style="color: rgb(255, 255, 255);">Rate Us<pre style="color:gold">1     2     3     4     5</pre></label><br>
+              <!--<li><label for="customRange"  style="color: rgb(255, 255, 255);">Rate Us<pre style="color:gold">1     2     3     4     5</pre></label><br>
               <input type="range" class="custom-range" id="customRange" name="points2" style="width: 200px;">
-            </li>
+            </li>-->
           </ul>
           <span class="navbar-text text-warning">
             Thank you Visit Us again
           </span>
+          <br><br>
       </div>
       
-    </nav><br>
-    <div class="alert alert alert-dismissible mx-auto bg-warning" style="width: 50%;opacity:90%;text-align: center;">
+    </nav>    <div class="alert alert alert-dismissible mx-auto bg-warning" style="width: 50%;opacity:90%;text-align: center;">
     <button type="button" class="close" data-dismiss="alert">&times;</button><br>
     Click&nbsp;&nbsp;<strong>Movie name</strong>  &nbsp;&nbsp; for Movie Info<br><br>
-    Click <strong>IMDB </strong>button to move to IMDB site of the movie <br>
-  </div><br>
-    <div style="margin-left:50px;">
-  <table class="table-borderless center" style="width: 90%;margin-left: auto;margin-right: auto;">
+    Click <strong>IMDB </strong>button to move to IMDB site of the movie <br></div><br><br>
+
+
                             <!--THIS IS FIRST ROW-->
                             <!--THIS IS THE TOMORROW WAR-->
-  <tr>
-    <td style="align-items: center;">
-    <div class="card" style="width: 200px;opacity: 90%; background-color:black" id='ok'>
-      <img class="card-img-top" src="The_Tomorrow_War.jpg"  style="width:200px;margin-right: 5;align-content: center;">
+
+    <div class="card-tags">
+    <div class="card" >
+      <img class="card-img-top" src="The_Tomorrow_War.jpg"  >
       <div class="card-body">
         <h4 class="card-title" style="font-size: 50px;"></h4>
       
-        <button type="button" class="btn btn-sm ml-3" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
-        data-toggle="collapse" data-target="#demo">The Tomorrow<br> War</button>
+        <button type="button" class="btn btn-sm ml-3" 
+        data-toggle="collapse" data-target="#demo"><h5>The Tomorrow<br> War</h5></button>
           <div id="demo" class="collapse">
-            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+            <div class="jumbotron" >
                   A family man is drafted to fight in a future war where the fate of humanity relies on his ability to confront the past.<br><br>
               Director:<br> Chris McKay<br><br>
               Writer: <br>Zach Dean<br><br>
@@ -206,19 +197,19 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
       <a href="https://www.imdb.com/title/tt9777666/" target="blank" class="btn btn-sm bg-warning text-dark" style="color:white;
       width:80%;margin-left:10%">IMDB</a><br>
     </div>
-     </td>
+
                             <!--THIS IS BLACK WIDOW-->
-  <td>  
-    <div class="card" style="width: 200px;opacity: 90%;background-color:black">
-      <img class="card-img-top" src="Blackwidow.png" alt="Card image" style="width: 200px;margin-right: 5;">
+
+    <div class="card" >
+      <img class="card-img-top" src="Blackwidow.png" >
 
       <div class="card-body">
         <h4 class="card-title" style="font-size: 50px;"></h4>
 
-         <button type="button" class="btn btn-sm ml-5" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
-        data-toggle="collapse" data-target="#demo1">Black <br>widow</button>
+         <button type="button" class="btn btn-sm ml-5" 
+        data-toggle="collapse" data-target="#demo1"><h5>Black <br>widow</h5></button>
           <div id="demo1" class="collapse">
-            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+            <div class="jumbotron" >
                   A film about Natasha Romanoff in her quests between the films Civil War and Infinity War.
                     Director:<br><br> Cate Shortland<br><br>
                     Writers: <br><br>Jac Schaeffer (story by), Ned Benson (story by)<br><br>
@@ -230,17 +221,17 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
       width:80%;margin-left:10%">IMDB</a><br>
     </div>
                             <!--THIS IS REMINISCENCE-->
-  </td>
-  <td>  
-    <div class="card" style="width: 200px;opacity: 90%;background-color:black">
-      <img class="card-img-top" src="Reminiscene.jpg" alt="Card image" style="width: 200px;margin-right: 5;">
+
+ 
+    <div class="card" >
+      <img class="card-img-top" src="Reminiscene.jpg" alt="Card image" >
 
       <div class="card-body">
         <h4 class="card-title" style="font-size: 50px;"></h4>
-        <button type="button" class="btn btn-sm ml-4" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
-        data-toggle="collapse" data-target="#demo2">Reminiscene<br>&nbsp;</button>
+        <button type="button" class="btn btn-sm ml-4"
+        data-toggle="collapse" data-target="#demo2"><h5>Reminiscene</h5>&nbsp;</button>
           <div id="demo2" class="collapse">
-            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+            <div class="jumbotron" >
                   A scientist discovers a way to relive your past and uses the technology to search for his long lost love.<br><br>
                     Director:<br><br> Lisa Joy<br><br>
                     Writer:<br><br> Lisa Joy<br><br>
@@ -252,15 +243,15 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
       width:80%;margin-left:10%">IMDB</a><br>
     </div>
                             <!--THIS IS JUNGLE CRUISE-->
-  </td><td>  
-    <div class="card" style="width: 200px;opacity: 90%;background-color:black">
-      <img class="card-img-top" src="jungle cruise.jpg" alt="Card image" style="width: 200px;margin-right: 5;">
+ 
+    <div class="card" >
+      <img class="card-img-top" src="jungle cruise.jpg" alt="Card image" >
 
       <div class="card-body">
-        <button type="button" class="btn btn-sm ml-5" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
-        data-toggle="collapse" data-target="#demo3">Jungle <br>Cruise</button>
+        <button type="button" class="btn btn-sm ml-5" 
+        data-toggle="collapse" data-target="#demo3"><h5>Jungle <br>Cruise</h5></button>
           <div id="demo3" class="collapse">
-            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+            <div class="jumbotron" >
                   Based on Disneyland's theme park ride where a small riverboat takes a group of travelers through a jungle filled with dangerous animals and reptiles but with a supernatural element.<br><br>
                 Director: <br><br>Jaume Collet-Serra<br><br>
                 Writers: <br><br>Glenn Ficarra (screenplay by), John Requa (screenplay by) <br><br>
@@ -270,25 +261,22 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
       </div>
       <a href="https://www.imdb.com/title/tt0870154/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm bg-warning text-dark" style="color:white;
       width:80%;margin-left:10%">IMDB</a><br>
-    </div></td>
-</tr>
+    </div>
+    </div>
 
-     
-           
                             <!--THIS IS NEXT ROW-->
                             <!--THIS IS BATMAN-->
 
-  <td class="td">&nbsp;</td>
-<tr>
-    <td>
-      <div class="card" style="width:200px;opacity: 90%;background-color:black">
-        <img class="card-img-top" src="batman.jpg" alt="Card image" style="width: 200px;margin-right: 5;">
+  <br><br><br>
+<div class="card-tags">
+      <div class="card" >
+        <img class="card-img-top" src="batman.jpg" alt="Card image" >
 
         <div class="card-body">
-          <button type="button" class="btn btn-sm ml-5" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
-        data-toggle="collapse" data-target="#demo4">Batman<br>&nbsp;</button>
+          <button type="button" class="btn btn-sm ml-4" 
+        data-toggle="collapse" data-target="#demo4"><h5>&nbsp;&nbsp;Batman<br>&nbsp;</h5></button>
           <div id="demo4" class="collapse">
-            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+            <div class="jumbotron" >
                   The plot is unknown.<br><br>
                 Director: <br><br>Matt Reeves<br><br>
                 Writers:<br><br> Peter Craig, Bob Kane (Batman created by)<br><br>
@@ -299,16 +287,16 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
         <a href="https://www.imdb.com/title/tt1877830/?ref_=nv_sr_srsg_3" target="blank" class="btn btn-sm bg-warning text-dark" style="color:white;
       width:80%;margin-left:10%">IMDB</a><br>
       </div>
-    </td>
+  
                               <!--THE FOREVER PURGE-->
-    <td>  
-      <div class="card" style="width:200px;opacity: 90%; background-color:black">
-        <img class="card-img-top" src="theforeverpurge.jpg" alt="Card image" style="width: 200px;margin-right: 5;">
+ 
+      <div class="card" >
+        <img class="card-img-top" src="theforeverpurge.jpg" alt="Card image">
         <div class="card-body">
-         <button type="button" class="btn btn-sm ml-4" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
-        data-toggle="collapse" data-target="#demo5">The Forever<br> Purge</button>
+         <button type="button" class="btn btn-sm ml-4" 
+        data-toggle="collapse" data-target="#demo5"><h5>The Forever<br> Purge</h5></button>
           <div id="demo5" class="collapse">
-            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+            <div class="jumbotron">
                  All the rules are broken as a sect of lawless marauders decides that the annual Purge does not stop at daybreak and instead should never end.<br><br>
               Director: <br><br>Everardo Gout<br><br>
               Writers:<br><br> James DeMonaco, James DeMonaco (characters)<br><br>
@@ -319,16 +307,16 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
         <a href="https://www.imdb.com/title/tt10327252/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm bg-warning text-dark" style="color:white;
       width:80%;margin-left:10%">IMDB</a><br>
       </div>
-    </td>
+
                               <!--This is Succide Squad-->
-    <td>
-      <div class="card" style="width:200px;opacity: 90%; background-color:black">
-        <img class="card-img-top" src="succidesquad.jpg" alt="Card image" style="width: 200px;margin-right: 5;">
+
+      <div class="card" >
+        <img class="card-img-top" src="succidesquad.jpg" alt="Card image" >
         <div class="card-body">
-          <button type="button" class="btn btn-sm ml-5" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
-        data-toggle="collapse" data-target="#demo6">Succide<br> Squad</button>
+          <button type="button" class="btn btn-sm ml-4" 
+        data-toggle="collapse" data-target="#demo6"><h5>&nbsp;&nbsp;&nbsp;Succide<br> Squad</h5></button>
           <div id="demo6" class="collapse">
-            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+            <div class="jumbotron" >
             Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X as they are dropped off at the remote, enemy-infused island of Corto Maltese.<br><br>
           Director:<br><br> James Gunn<br><br>
           Writers:<br><br> James Gunn, John Ostrander (comic book)<br><br>
@@ -336,19 +324,19 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
             </div>
           </div> 
         </div>
-        <a href="https://www.imdb.com/title/tt6334354/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm bg-warning text-dark" style="color:white;
-      width:80%;margin-left:10%">IMDB</a><br>
-      </div>
-    </td>
+        <a href="https://www.imdb.com/title/tt6334354/?ref_=fn_al_tt_1" target="blank"
+         class="btn btn-sm bg-warning text-dark" style="color:white;
+      width:80%;margin-left:10%">IMDB</a><br></div>
+ 
                               <!--this is Dune-->
-    <td>
-      <div class="card" style="width:200px;opacity: 90%; background-color:black">
-        <img class="card-img-top" src="dune.jpg" alt="Card image" style="width: 200px;margin-right: 5;">
+ 
+      <div class="card" >
+        <img class="card-img-top" src="dune.jpg" alt="Card image">
         <div class="card-body">
-         <button type="button" class="btn btn-sm ml-5" style="color:rgb(255, 255, 255);font-family: paprika;font-size: large;"
-        data-toggle="collapse" data-target="#demo7">Dune<br>&nbsp;</button>
+         <button type="button" class="btn btn-sm ml-5" 
+        data-toggle="collapse" data-target="#demo7"><h5>Dune<br>&nbsp;</h5></button>
           <div id="demo7" class="collapse">
-            <div class="jumbotron" style="font-family: paprika;font-size: smaller;">
+            <div class="jumbotron" >
                   Feature adaptation of Frank Herbert's science fiction novel, about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.<br><br>
                 Director: <br><br>Denis Villeneuve<br><br>
                 Writers: <br><br>Frank Herbert (novel), Jon Spaihts (screenplay by)
@@ -359,38 +347,30 @@ style="text-decoration: none;font-size: 60px;font-family: paprika;opacity: 90%;t
         <a href="https://www.imdb.com/title/tt1160419/?ref_=fn_al_tt_1" target="blank" class="btn btn-sm bg-warning text-dark" style="color:white;
       width:80%;margin-left:10%">IMDB</a><br>
       </div>
-    </td>
-  </tr>
-</table>
-</div><br><br>
+ </div>
+</div>
+<br><br>
+<div class="alert alert alert-dismissible mx-auto bg-warning" style="width: 50%;opacity:90%;text-align: center;">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    Click &nbsp;&nbsp;<strong>Page Name</strong>  &nbsp;&nbsp;  to move to next page.
+  </div> 
 
 
 <br><br>
                             <!--pagination-->
-<div style="display: block;opacity: 90%;background-color: black;" class="jumbtron" id='page'>
+<div id='page'>
     <ul class="pagination justify-content-center" >
-      <li class="page-item"><a class="page-link  text-warning border border-none" href="#"  style="background-color:transparent;font-size:larger ">Hollywood</a></li>
-      <li class="page-item"><a class="page-link  text-warning border border-secondary-4" href="/KOLLYWOOD/Kollywood.html"  style="background-color: transparent;font-size:larger ">Kollywood</a></li>
-      <li class="page-item"><a class="page-link  text-warning border border-secondary-4" href="/ANIME/Anime.html"  style="background-color: transparent;font-size:larger ">Anime</a></li>
-      <li class="page-item"><a class="page-link  text-warning border border-secondary-4" href="/More/More.html"  style="background-color:transparent;font-size:larger ">More....</a></li>
+      <li class="page-item"><a class="page-link text-warning" href="#">Hollywood</a></li>
+      <li class="page-item"><a class="page-link text-warning" href="/KOLLYWOOD/Kollywood.html"  >Kollywood</a></li>
+      <li class="page-item"><a class="page-link text-warning" href="/ANIME/Anime.html"  >Anime</a></li>
+
     </ul>
-</div>
-<br>
-<div class="alert alert alert-dismissible mx-auto bg-warning" style="width: 50%;opacity:90%;text-align: center;">
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-    Click &nbsp;&nbsp;<strong>Page Name</strong>  &nbsp;&nbsp;  to move to next page.
-  </div>   
-<br>
-<div id="aboutus"class="jumbotron jumbotron-fluid" style="text-align: center;opacity:90%;background-color: black;"> 
-  <a href="#" class="text-warning"style="text-decoration: none;font-size:larger ">Letterboxd@gmail.com</a><br>
-  <a href="#" class="text-warning"style="text-decoration: none;font-size:larger ">www.Letterboxd.com</a><br>
-  <a href="#" class="text-warning"style="text-decoration: none;font-size:larger ">@_Letter_boxd</a><br>
-  <a type="button" class="btn text-warning" style="opacity:100%;font-size:larger "data-toggle="modal" data-target="#myModal" id="logout">Logout</a>
-  <div class="alert alert alert-dismissible  bg-warning " style="width: 50%;opacity:90%;text-align: center;margin-left: 27%;">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          Click&nbsp;&nbsp;<br><strong>Logout</strong>  &nbsp;then &nbsp;<strong>Submit</strong><br> with all boxes empty.<br>
-          <strong>Back-end hasn't been coded yet</strong>
-        </div>      
+</div><br><br>
+<div id="aboutus"class="jumbotron jumbotron-fluid" > 
+  <a href="#" class="btn text-warning">Letterboxd@gmail.com</a><br>
+  <a href="#" class="btn text-warning">www.Letterboxd.com</a><br>
+  <a href="#" class="btn text-warning">@_Letter_boxd</a><br>
+  <a type="button" class="btn text-warning" data-toggle="modal" data-target="#myModal" id="logout">Logout</a>
 </div>
                             <!-- The Modal -->
   <div class="modal" id="myModal" style="opacity: 100%;">

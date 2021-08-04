@@ -20,11 +20,11 @@ body{
 }
 .button{
     color:rgb(255, 255, 255);
-    font-family: paprika;
+
 
 }
 .jumbotron{
-    font-family: paprika;
+
     font-size: smaller;
 }
 #banner{
@@ -34,7 +34,6 @@ body{
 #banner-link{
     text-decoration: none;
     font-size: 60px;
-    font-family: paprika;
     opacity: 90%;
     text-align: center;
 }

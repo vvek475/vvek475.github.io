@@ -65,3 +65,7 @@ body{
 a{
     font-size: larger;
 }
+.card-body{
+    display: flex;
+    justify-content: center;
+}

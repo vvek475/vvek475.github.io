@@ -19,11 +19,7 @@ body{
     margin-right: 5;
     align-content: center;
 }
-.button{
-    color:rgb(255, 255, 255);
 
-
-}
 .jumbotron{
 
     font-size: smaller;
@@ -67,4 +63,12 @@ body{
 }
 a{
     font-size: larger;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+}
+button:focus{
+    outline: none!important;
+    border: none!important;
 }

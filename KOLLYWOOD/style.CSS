@@ -17,6 +17,7 @@ body{
 .card-img-top{
     width:200px;
     margin-right: 5;
+    opacity: 100%;
     align-content: center;
 }
 .button{

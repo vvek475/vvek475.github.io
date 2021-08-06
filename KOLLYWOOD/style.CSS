@@ -12,7 +12,8 @@ body{
 .card{
     width: 200px;
     opacity: 90%;
-    background-color:black
+    background-color:black;
+    margin-bottom: 50px;
 }
 .card-img-top{
     width:200px;

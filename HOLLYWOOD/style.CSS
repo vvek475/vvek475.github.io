@@ -12,7 +12,8 @@ body{
 .card{
     width: 200px;
     opacity: 90%;
-    background-color:black
+    background-color:black;
+    box-sizing: border-box;
 }
 .card-img-top{
     width:200px;
@@ -61,6 +62,7 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 a{
     font-size: larger;

@@ -13,7 +13,9 @@ body{
     width: 200px;
     opacity: 90%;
     background-color:black;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .card-img-top{
     width:200px;

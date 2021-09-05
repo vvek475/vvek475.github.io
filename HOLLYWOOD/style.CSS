@@ -77,13 +77,3 @@ a{
     display: flex;
     justify-content: center;
 }
-@media screen and  (min-width:750px) {
-    .card{
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;
-        justify-content: space-around;
-    }
-    
-}

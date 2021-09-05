@@ -7,145 +7,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <style>
-            @media(min-width:700px){
-            .box{
-                    display: flex;
-                    margin-top: 10%;
-                    width: 600px;
-                    height: 450px;
-                    border-radius: 14px;
-                    background: whitesmoke;
-                    box-shadow: 12px 12px 24px #9e9e9e, -12px -12px 24px #ffffff;
-                    
-      
-            }
-          }
-            #demo{
-              box-sizing: border-box;
-                height: 450px ;
-                width:300px;
-                margin-bottom: 50px;
-
-            }
-
-            img{
-                border-radius: 14px;
-                margin-bottom: 50px;
-
-                height: 450px;
-                width: 300px
-            }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
-
-body {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-family: poppins;
-}
-
-.container {
-  margin-bottom: 50px;
-  box-sizing: border-box;
-  width: 300px;
-  height: 450px;
-  border-radius: 14px;
-
-  padding: 40px;
-  background: #ecf0f3;
-  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
-}
-
-.brand-logo {
-
-  height: 100px;
-  width: 100px;
-  background: url("/Images/Letterboxd.png");
-
-  margin: auto;
-  margin-top: 2px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
-}
-
-.brand-title {
-  margin-top: 5px;
-  font-weight: 250;
-  font-size: 1.8rem;
-  color: #000000;
-  letter-spacing: 1px;
-}
-
-.inputs {
-  text-align: left;
-  margin-top: 30px;
-}
-
-label, input, button {
-  display: block;
-  width: 100%;
-  padding: 0;
-  border: none;
-  outline: none;
-  box-sizing: border-box;
-}
-
-label {
-  margin-bottom: 8px;
-  
-}
-p{
-  font-weight: 150;
-}
-
-label:nth-of-type(2) {
-  margin-top: 14px;
-}
-
-input::placeholder {
-  color: gray;
-}
-
-input {
-  background: #ecf0f3;
-  padding: 10px;
-  padding-left: 20px;
-  height: 25px;
-  font-size: 14px;
-  border-radius: 50px;
-  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
-}
-
-button {
-  margin-top: 40px;
-  height: 40px;
-  border-radius: 20px;
-  font-weight: 900;
-  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
-  transition: 0.5s;
-}
-
-
-
-
-label{
-  font-size: small;
-}
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="box">   
           <div class="box1">
-          <div id="demo" class="carousel slide" data-ride="carousel" >
-          <!--<ul class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
-        <li data-target="#demo" data-slide-to="3"></li>
-      </ul>-->
-                                          
+          <div id="demo" class="carousel slide" data-ride="carousel" >                                  
           <div class="carousel-inner">
             <div class="carousel-item active"><img src="/HOLLYWOOD/batman.jpg"></div>
             <div class="carousel-item"><img src="/HOLLYWOOD/The_Tomorrow_War.jpg"></div>
@@ -169,7 +36,7 @@ label{
               <input type="email" placeholder="example@test.com" />
               <label><p>PASSWORD</p></label>
               <input type="password" placeholder="Min 6 charaters long" />
-              <button type="submit" style='background:black;color:white;' formaction="/HOLLYWOOD/Hollywood_Intro.html">SUBMIT</button>
+              <button type="submit" style='background:black;color:white;' formaction="/HOLLYWOOD/Hollywood.html">SUBMIT</button>
             </div>
             </form>
           </div>

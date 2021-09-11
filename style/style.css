@@ -318,7 +318,7 @@ width: 100%;
 }
 .table{
     display:flex;
-    flex-basis: 50%;
+
     justify-content: center;
 
 
@@ -628,5 +628,9 @@ width: 100%;
     .project_2{
         margin-left: 100%;
     }
+    .table{
+        margin-left: 320px;
+    }
+
 
 }

@@ -623,6 +623,10 @@ width: 100%;
         justify-content: center;
     }
     .project_1{
-        margin-left: 320px;
+        margin-left: 100%;
     }
+    .project_2{
+        margin-left: 100%;
+    }
+
 }

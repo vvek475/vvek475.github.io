@@ -701,4 +701,8 @@ width: 100%;
         transform: translate(-50%,0%);
 
     }
+    .page_1,.page_2,header,.full{
+        display: none;
+
+    }
 }

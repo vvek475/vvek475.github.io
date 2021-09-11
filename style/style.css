@@ -12,13 +12,14 @@ body{
 }
 .top{
     display: flex;
+    padding: 10px;
+    flex-basis: 100%;
 }
 .digital
 {
-    margin-left: 20px;
-    padding-top:10px;
+    flex-basis: 20%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3vw;
+    font-size: 40px;
     color:white;
 
 }
@@ -26,9 +27,11 @@ body{
     color: gold;
 }
 .navbar{
+    display: flex;
+    flex-basis: 80%;
+    align-items: flex-start;
+    justify-content: flex-end;
 
-    float: right;
-    margin-left: 420px;
     margin-top:-5px
 }
 .list_items{
@@ -38,7 +41,7 @@ body{
     color: gold;
     font-family: sans-serif;
     padding: 20px;
-    font-size: 1vw;
+    font-size: 15px;
     list-style: none;
 }
 .navbar a{
@@ -48,19 +51,25 @@ body{
     color: white;
 }
 header{
-    margin: 100px;
-    margin-top: 250px;
+    display: flex;
+    flex-basis: 90%;
+
+    margin-top: 200px;
 }
 .intro_card{
     display: flex;
-    width: 80%;
+    justify-content: center;
+
 }
 .page_1_column_1{
     display: flex;
+    flex-basis: 32%;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 .full_stack{
-    width: 600px;
+
     font-size: 3vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: gold;
@@ -77,7 +86,7 @@ header{
     font-weight: 300;
     font-family: sans-serif;
     text-align: left;
-    width: 480px;
+
     opacity:90%;
     margin-top: 40px;
     
@@ -120,11 +129,15 @@ header{
     color:gold;
     border:1px solid gold;
 }
-
+.dp_div{
+    display: flex;
+    flex-basis: 50%;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
 .dp{
+
     width: 550px;
-    margin-left: 100px; 
-    margin-top:-100px
 }
 .dropbtn {
     display: none;
@@ -175,68 +188,79 @@ header{
 width: 100%;
 }
 #skill{
-    margin-left: 650px;
+    display: flex;
+    justify-content: center;
     color: gold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 200px;
-    font-size: 4vw;
+    font-size: 60px;
 }
 .set{
     color: white;
 }
-.whole-box{
-    position:relative;
+.whole-box{ 
     width: 80%;
-    height: 750px;
+    height: fit-content;
     margin-top: 50px;
     margin-left: 10%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 #box_1,#box_7,#box_10{
-    position:relative;
+
     height:250px;
-    width:25%;
+    width:302.8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: gold;
 }
 #box_2,#box_5,#box_9{
-    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height:250px;
-    width:25%;
+    width:302.8px;
     background-color: navy;
 }
 #box_3,#box_8,#box_12{
-    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height:250px;
-    width:25%;
+    width:302.8px;
     background-color: white;
 }
 #box_4,#box_6,#box_11{
-    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height:250px;
-    width:25%;
+    width:302.8px;
     background-color: red;
 }
 
 #django{
     display: block;
     width:120px;
-    padding:80px;
-    margin-left: 10px;
-    margin-top: 20px;
+
 }
 
 
 #js{
-    padding:70px;
-    margin-left: 40px;
+
     width: 80px;
 }
-
+.navbar_page_2{
+    display: flex;
+    justify-content: center;
+}
 .navbar_page_2 ul{
     margin-top: 100px;
     display: flex;
-    margin-left:480px
+
 }
 .navbar_page_2 a{
 
@@ -247,50 +271,34 @@ width: 100%;
     padding: 20px;
 }
 #rest{
-    padding: 50px;
     width: 200px;
 }
 #py{
     width:120px;
-    padding: 40px;
-    margin-left: 50px;
 }
 #react{
-    padding:50px;
     width: 180px;
-
 }
 #bootstrap{
-    padding:50px;
+
     width: 180px;
 }
 #sqlite{
-    padding:50px;
     width: 200px;
-    margin-top: 20px;
 }
 #github{
-    padding:40px;
     width: 180px;
-    margin-left:20px;
 }
 #git{
-    padding: 50px;
     width: 150px;
 }
 #agile{
-    padding: 50px;
     width: 150px;
-    margin-left: 20px;
 }
 #photoshop{
     width: 250px;
-    padding: 30px;
-    margin-top: 60px;
 }
 #orm{
-    margin-left: 30px;
-    padding: 60px;
     width: 150px;
 }
 .page_3{
@@ -300,20 +308,21 @@ width: 100%;
 }
 #exp{
     font-size: 60px;
-    margin-left: 42%;
+    display: flex;
+    justify-content: center;
     color: gold;
     margin-bottom: 200px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .table{
-    width: 60%;
-    margin-left: 20%;
     display:flex;
-    height: 800px;
+    flex-basis: 50%;
+    justify-content: center;
+
 
 }
 .left{
-    width: 30%;
+    width: 350px;
     display: flex;
     flex-direction: column;
 }
@@ -405,7 +414,7 @@ width: 100%;
     line-height: 10px;
 }
 .middle{
-    margin-left: 20%;
+
     display: flex;
     flex-direction: column;
     height: 1290px;
@@ -416,8 +425,8 @@ width: 100%;
     font-size: 20px;
 }
 .right{
-    margin-left: 10%;
-    width: 30%;
+
+    width: 350px;
     display: flex;
     flex-direction: column;
 
@@ -427,33 +436,36 @@ width: 100%;
     font-size: 55px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: gold;
-    margin-left: 650px;
+    display: flex;
+    justify-content: center;
 }
 .project_1{
     margin-top: 200px;
     display: flex;
+    flex-basis: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .details_1{
     display: flex;
+    flex-basis: 42%;
     flex-direction: column;
-    width: 400px;
-    margin-left: 100px;
     color: gold;
-    height: 500px;
-    text-align: left;
+    justify-content: flex-end;
 }
 .topic_1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: gold;
     font-size: 50px;
-    width: 500px;
+    width: 600px;
+    text-align: center;
 }
 .para_1{
     font-family: sans-serif;
     font-size: 20px;
     color: white;
     width: 600px;
-    text-align: left;
+    text-align: center;
 }
 .page_4{
     margin-top: 300px;
@@ -461,59 +473,76 @@ width: 100%;
 }
 .cake{
     width: 600px;
-    margin-left: 320px;
-    margin-top: -0px;
+    display: flex;
+
+}
+.img_1{
+    flex-basis: 45%;
+    display: flex;
+    justify-content: flex-end;
+
 }
 .details_2{
     display: flex;
     flex-direction: column;
-    width: 400px;
-    margin-left: 100px;
+    justify-content: center;
+    justify-content: flex-end   ;
+    flex-basis: 45%;
     color: gold;
     height: 500px;
     
 }
-.details_2 p{
-    text-align: right;
-}
-.details_2 div{
-    margin-left:100px ;
-}
+
+
 .img_2{
     width: 650px;
     height: fit-content;
-    margin-left: 100px;
-    margin-top: 10px;
+    flex-basis: 50%;
+    margin-top: 150px;
+    display: flex;
+
+    justify-content: flex-end;
+    margin-bottom: 100px;
 
 }
 .project_2{
     display: flex;
     margin-top: 200px;
-    text-align: right;
+    flex-basis: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .details_3 {
-    margin-left: 100px;
+    margin-top: 50px;
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-.details_3 .topic_1{
-    text-align: left;
-}
+
 .img_3{
-    margin-left: 100px;
+    
     width: 650px;
-    margin-top:50px;
+    margin-top:150px;
     height: fit-content;
 }
 .full{
-    width: 60%;
+    width: 500px;
+    flex-basis: 70%;
     height: fit-content;
-    margin-left: 20%;
-    margin-top: 650px;
+    margin-top: 450px;
+}
+.full_div{
+    display: flex;
+    justify-content: center;
 }
 .card_box{
-    width: 90%;
+
     height:400px;
-    margin-left:100px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .card_1{
     width: 300px;
@@ -521,13 +550,14 @@ width: 100%;
     margin-left:20px;
     background-color: rgb(128, 128, 128,0.2) ;
     color: gold;
+    border: 1px solid gold;
 
 }
 .card_1:hover{
     width:350;
     height:450px;
     margin-top: -50px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255,0.8);
     color: black;
 }
 .page_5{
@@ -554,8 +584,10 @@ width: 100%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
     color: gold;
+    display: flex;
+    justify-content: center;
     margin-top: 80px;
-    margin-left: 670px;
+
     margin-bottom: 80px;
 
 }
@@ -575,4 +607,12 @@ width: 100%;
     border-radius: 20px;
     width: 40%;
     margin-left:27%;
+}
+@media(max-width:790px){
+    .navbar{
+        display: none;
+    }
+    .dp_div{
+        display:none;
+    }
 }

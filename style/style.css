@@ -1,6 +1,6 @@
 body{
     background-color: black;
-    margin: 0px;
+
     box-sizing: border-box;
     padding: 0;;
 }
@@ -623,24 +623,32 @@ width: 100%;
         justify-content: center;
     }
     .whole-box{
-        margin-left: 200px;
+        margin-left: 50%;
+        transform: translate(50%,0);
     }
     .project_1{
-        margin-left: 100%;
+        margin-left: 50%;
+        transform: translate(50%,0);
     }
     .project_2{
-        margin-left: 100%;
+        margin-left: 50%;
+        transform: translate(50%,0);
     }
     .table{
-        margin-left: 320px;
+        margin-left: 50%;
+        transform: translate(50%,0);
     }
     .card_box{
-        margin-left: 320px;
+        margin-left: 50%;
+        transform: translate(50%,0);    
     }
     .full{
-        margin-left: 320px;
+        margin-left: 50%;
+        transform: translate(50%,0);  
     }
     #projec_heading{
-        margin-left: 320px;
+        margin-left: 50%;
+        transform: translate(50%,0);  
     }
+
 }

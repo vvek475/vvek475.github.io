@@ -1,6 +1,5 @@
 body{
     background-color: black;
-
     box-sizing: border-box;
     padding: 0;;
 }
@@ -11,6 +10,9 @@ body{
 	width: 100%;
 	height: 100vh;
 	z-index: -1;	
+}
+.bg_img{
+    display: none;
 }
 .top{
     display: flex;
@@ -103,9 +105,9 @@ header{
 }
 .button_1{
     display: inline;
-    border: 1px solid white;
+    border: 1px solid gold;
     background-color: transparent;
-    color:white;
+    color:gold;
     font-size: 18px;
     font-family: sans-serif;
     font-weight: 200px;
@@ -116,9 +118,9 @@ header{
 }
 .button_2{
     display: inline;
-    border: 1px solid white;
+    border: 1px solid gold;
     background-color: transparent;
-    color:white;
+    color:gold;
     font-size: 18px;
     font-family: sans-serif;
     font-weight: 200px;
@@ -128,8 +130,8 @@ header{
     margin-left: 30px;
 }
 .buttons button:hover{
-    color:gold;
-    border:1px solid gold;
+    color:white;
+    border:1px solid white;
 }
 .dp_div{
     display: flex;
@@ -142,28 +144,24 @@ header{
     width: 550px;
 }
 .dropbtn {
-    display: none;
+
     color: gold;
     padding: 5px;
-    font-size: 25px;
-    margin-top: 26px;
+    font-size: 35px;
     border: none;
-    margin-left: 225px;
     border-radius: 5px;
-    background-color: black;
+    background-color: transparent;
 }
   
 .dropdown {
     position: relative;
     display: inline-block;
-    margin-left: 800px;
-
-    
+    margin-top: -300px;    
 }
   
 .dropdown-content {
     display: none;
-    margin-left: 160px;;
+    margin-left: -120px;;
     position: absolute;
     background-color: gold;
     min-width: 160px;
@@ -612,6 +610,7 @@ width: 100%;
 }
 @media (max-width:790px){
     .navbar{
+        margin-top: -500px;
         display: none;
     }
     .dp_div{
@@ -695,22 +694,17 @@ width: 100%;
         transform: translate(-50%,0%);
 
     }
-    header{
-        display: none;
 
-    }
     body{
         width: 100vw;
         margin-left: -50%;
     }
-    .top{
-        display: none;
-    }
+
     .page_2{
         margin-left: 0px;
     }
     .whole-box{
-        margin-left: 52%;
+        margin-left: 50%;
     }
     #skill{
         margin-left:100% ;
@@ -727,5 +721,59 @@ width: 100%;
     }
     #photoshop{
         width: 200px;
+    }
+    .dropbtn{
+        display: inline;
+
+
+
+    }
+    .dropdown{
+        display: inline;
+        margin-top: -12px;
+        margin-left: 140px;
+
+
+    }
+    .digital{
+        display: inline;
+        font-size: 30px;
+        flex-basis: auto;
+        width: 300px;
+        margin-left: 54%;
+    }
+    .page_1_column_1{
+        margin-left: 105%;
+
+    }
+    .full_stack{
+        margin-left: 10px;
+        font-size: 40px;
+    }
+    .button_2,.button_1{
+        margin-top: -50px;
+        width: 250px;
+        font-size: 22px;
+    }
+    .button_1{
+        margin-top: -80px;
+        margin-left: 10px;
+    }
+    .button_2{
+        margin-left: -250px;
+    }
+    .bg_img{
+        opacity: 60%;
+        margin-left: 10px;
+        display: block;
+        width: 370px;
+        position: relative;
+
+    }
+    .summary{
+        margin-top: -400px;
+        position: absolute;
+        width: 350px;
+        margin-left: 30px;
     }
 }

@@ -622,6 +622,9 @@ width: 100%;
         display: flex;
         justify-content: center;
     }
+    .whole-box{
+        margin-left: 200px;
+    }
     .project_1{
         margin-left: 100%;
     }
@@ -637,8 +640,7 @@ width: 100%;
     .full{
         margin-left: 320px;
     }
-    .projec_heading{
+    #projec_heading{
         margin-left: 320px;
-
     }
 }

@@ -608,7 +608,7 @@ width: 100%;
     width: 40%;
     margin-left:27%;
 }
-@media (max-width:790px){
+@media (max-width:595px){
     .navbar{
         margin-top: -500px;
         display: none;

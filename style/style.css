@@ -1,6 +1,8 @@
 body{
     background-color: black;
     margin: 0px;
+    box-sizing: border-box;
+    padding: 0;;
 }
 #particles-js{
 	position: fixed;
@@ -202,7 +204,7 @@ width: 100%;
     width: 80%;
     height: fit-content;
     margin-top: 50px;
-    margin-left: 10%;
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -614,5 +616,13 @@ width: 100%;
     }
     .dp_div{
         display:none;
+    }
+    .whole-box div{
+        width: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    .project_1{
+        margin-left: 320px;
     }
 }

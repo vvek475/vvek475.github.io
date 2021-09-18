@@ -7,7 +7,7 @@ body{
 	position: fixed;
 	left: 0;
 	top: 0;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	z-index: -1;	
 }
@@ -17,9 +17,9 @@ body{
 .top{
     display: flex;
     padding: 10px;
-    flex-basis: 100%;
+    flex-basis: auto;
 }
-.digital
+.vivek
 {
     flex-basis: 20%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -27,7 +27,7 @@ body{
     color:white;
 
 }
-.resume{
+.anand{
     color: gold;
 }
 .navbar{
@@ -60,8 +60,9 @@ header{
 
     margin-top: 200px;
 }
-.intro_card{
+.page_1{
     display: flex;
+    flex-basis: auto;
     justify-content: center;
 
 }
@@ -103,7 +104,7 @@ header{
     display: flex;
     margin-top:250px;
 }
-.button_1{
+.guide{
     display: inline;
     border: 1px solid gold;
     background-color: transparent;
@@ -116,7 +117,7 @@ header{
     border-radius: 20px;
     
 }
-.button_2{
+.contact{
     display: inline;
     border: 1px solid gold;
     background-color: transparent;
@@ -133,15 +134,16 @@ header{
     color:white;
     border:1px solid white;
 }
-.dp_div{
-position: relative;
+.pagr_1_column_2{
+
     display: flex;
-    flex-basis: 50%;
-    align-items: flex-start;
+    margin-left: 800px;
+    align-items: flex-end;
     justify-content: flex-end;
 }
-.dp{
+.page_img_1{
 
+    margin-left: 200px;
     width: 550px;
 }
 .dropbtn {
@@ -186,7 +188,7 @@ position: relative;
 .dropdown:hover .dropbtn {background-color: transparent}
 
 .page_2{
-width: 100%;
+width: auto;
 }
 #skill{
     display: flex;
@@ -303,7 +305,7 @@ width: 100%;
     width: 150px;
 }
 .page_3{
-    width: 100%;
+    width: auto;
     margin-top: 200px;
 
 }
@@ -433,7 +435,7 @@ width: 100%;
 
 
 }
-#projec_heading{
+#projects{
     font-size: 55px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: gold;
@@ -454,14 +456,14 @@ width: 100%;
     color: gold;
     justify-content: flex-end;
 }
-.topic_1{
+.topic{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: gold;
     font-size: 50px;
     width: 600px;
     text-align: center;
 }
-.para_1{
+.para{
     font-family: sans-serif;
     font-size: 20px;
     color: white;
@@ -475,6 +477,7 @@ width: 100%;
 .cake{
     width: 600px;
     display: flex;
+    
 
 }
 .img_1{
@@ -545,7 +548,7 @@ width: 100%;
     justify-content: center;
     flex-wrap: wrap;
 }
-.card_1{
+.card{
     width: 300px;
     height:400px;
     margin-left:20px;
@@ -554,7 +557,7 @@ width: 100%;
     border: 1px solid gold;
 
 }
-.card_1:hover{
+.card:hover{
     width:350;
     height:450px;
     margin-top: -50px;
@@ -617,7 +620,7 @@ width: 100%;
         margin-top: -500px;
         display: none;
     }
-    .dp_div{
+    .pagr_1_column_2{
         display:none;
     }
 
@@ -643,15 +646,15 @@ width: 100%;
         transform: translate(50%,0); 
   
     }
-    #projec_heading{
+    #projects{
         font-size: 45px;
         margin-left: 50%;
         transform: translate(50%,0);  
     }
-    .topic_1{
+    .topic{
         font-size: 30px;
     }
-    .para_1{
+    .para{
         margin-left: 50%;
         transform: translate(-50%,0%);
         font-size: 15px;
@@ -754,16 +757,16 @@ width: 100%;
         margin-left: 10px;
         font-size: 40px;
     }
-    .button_2,.button_1{
+    .contact,.guide{
         margin-top: -50px;
         width: 250px;
         font-size: 22px;
     }
-    .button_1{
+    .guide{
         margin-top: -80px;
         margin-left: 10px;
     }
-    .button_2{
+    .contact{
         margin-left: -250px;
     }
     .bg_img{

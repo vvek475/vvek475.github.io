@@ -719,6 +719,8 @@ width: auto;
     .exp_3,.exp_1,.exp_2,.exp_4{
         font-size: 15px;
         width: 150px;
+        padding: 5px;
+        height: 300px;
     }
     .left{
         width: 200px;
@@ -738,7 +740,7 @@ width: auto;
         width: 100%;
     }
     .middle{
-        height:1500px;
+        height:1600px;
         margin-top:-10px
     }
     .divident_1{
@@ -748,166 +750,26 @@ width: auto;
     .table{
         margin-left: 10px;
     }
-
-}
-@media (max-width:595px){
-    /* .navbar{
-        margin-top: -500px;
-        display: none;
-    }
-    .pagr_1_column_2{
-        display:none;
-    }
-
-    .project_1{
-        margin-left: 50%;
-        transform: translate(50%,0);
-    }
-    .project_2{
-        margin-left: 50%;
-        transform: translate(50%,0);
-    }
-    .table{
-        margin-left: 50%;
-        transform: translate(50%,0);
-    }
-    .card_box{
-        margin-left: 50%;
-        transform: translate(50%,0);    
-    }
-    .full{
-        width: 400px;
-        margin-left: 10px;
-        transform: translate(50%,0); 
-  
-    }
-    #projects{
-        font-size: 45px;
-        margin-left: 50%;
-        transform: translate(50%,0);  
-    }
-    .topic{
-        font-size: 30px;
-    }
-    .para{
-        margin-left: 50%;
-        transform: translate(-50%,0%);
-        font-size: 15px;
-        width: 400px;
-    }
-    .cake{
-        width:320px;
-        margin-bottom: -100px;
-    }
-    .img_2,.img_3{
-        width: 360px;
-    }
-    .details_3,.details_2{
-        margin-top: 0px;
-    }
-    .img_2{
-        margin-bottom: -100px;
-    }
-    .exp_3,.exp_1,.exp_2,.exp_4{
-        font-size: 15px;
+    .card{
         width: 150px;
+        height: 300px;
     }
-    .left{
-        width: 200px;
-
+    .card_head{
+        font-size: 35px;
+        margin-left: -5px;
     }
-    .right{
-        width: 200px;
-    }
-    .middle{
+    .card_button{
         display: none;
     }
-    #exp{
-        font-size: 40px;
-        display: block;
-        margin-left: 85%;
-        transform: translate(-50%,0%);
-
+    .card_name{
+        font-size: 12px;
     }
-    #page_5_head{
-        font-size: 40px;
-        display: block;
-        margin-left: 85%;
-        transform: translate(-50%,0%);
-
+    #Git{
+        margin-bottom: 12px;
+    }
+    .summary:hover{
+        color: gold;
     }
 
-    body{
-        width: 100vw;
-        margin-left: -50%;
-    }
-
-    .page_2{
-        margin-left: 0px;
-    }
-    .whole-box{
-        margin-left: 50%;
-    }
-    #skill{
-        margin-left:100% ;
-    }
-    .navbar_page_2{
-        margin-left: 90%;
-    }
-    .navbar_page_2 a{
-        font-size: 15px;
-    }
-    #box_1,#box_2,#box_3,#box_4,#box_5,#box_6,#box_7,#box_8,#box_9,#box_10,#box_11,#box_12{
-        width:200px;
-        height:200px; 
-    }
-    #photoshop{
-        width: 200px;
-    }
-    .dropbtn{
-        display: inline;
-
-
-
-    }
-    .dropdown{
-        display: inline;
-        margin-top: -12px;
-        margin-left: 120px;
-
-
-    }
-    .digital{
-        display: inline;
-        font-size: 30px;
-        flex-basis: auto;
-        width: 300px;
-        margin-left: 54%;
-    }
-    .page_1_column_1{
-        margin-left: 105%;
-
-    }
-    .full_stack{
-        margin-left: 10px;
-        font-size: 40px;
-    }
-    .contact,.guide{
-        margin-top: -50px;
-        width: 250px;
-        font-size: 22px;
-    }
-    .guide{
-        margin-top: -80px;
-        margin-left: 10px;
-    }
-    .contact{
-        margin-left: -250px;
-    }
-    .summary{
-        margin-top: -400px;
-        position: absolute;
-        width: 350px;
-        margin-left: 30px;
-    } */
 }
+

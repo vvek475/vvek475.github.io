@@ -611,13 +611,14 @@ width: auto;
         box-sizing: border-box;
     }
     .vivek{
-        font-size: 28px;
+        font-size: 32px;
     }
     .navbar{
         display: none;
     }
     .dropbtn{
         display: block;
+        font-size: 35px;
     }
     .summary{
         font-weight: 200;
@@ -642,7 +643,7 @@ width: auto;
         flex-basis: auto;
     }
     .full_stack{
-        font-size: 28px;
+        font-size: 35px;
     }
     header{
         width: 100%;
@@ -759,10 +760,11 @@ width: auto;
     }
     .card{
         width: 150px;
-        height: 300px;
+        height: 260px;
+        margin-bottom: 40px;
     }
     .card_head{
-        font-size: 35px;
+        font-size: 30px;
         margin-left: -5px;
     }
     .card_button{
@@ -779,6 +781,13 @@ width: auto;
     }
     .card_box{
         margin-left: -20px;
+    }
+    .card:hover{
+        width:160;
+        height:280px;
+        margin-top: -10px;
+        background-color: rgb(255, 255, 255,0.8);
+        color: black;
     }
 
 }

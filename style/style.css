@@ -643,7 +643,7 @@ width: auto;
         flex-basis: auto;
     }
     .full_stack{
-        font-size: 35px;
+        font-size: 32px;
     }
     header{
         width: 100%;
@@ -668,11 +668,11 @@ width: auto;
 
     }
     .navbar_page_2 a{
-        font-size: 15px;
+        font-size: 18px;
     }
     .navbar_page_2{
-
-        justify-content: flex-end;
+        margin-left: -30px;
+    
     }
     #projects{
         font-size: 45px;
@@ -720,8 +720,8 @@ width: auto;
     .exp_3,.exp_1,.exp_2,.exp_4{
         font-size: 15px;
         width: 150px;
-        padding: 5px;
-        height: 300px;
+        padding: 10px;
+        height: 350px;
     }
     .left{
         width: 160px;
@@ -740,14 +740,14 @@ width: auto;
     #exp{
         font-size: 40px;
         display: block;
-        transform: translate(55%,0%);
+        transform: translate(66%,0%);
         width: 190px;
     }
     .full_div{
         width: 100%;
     }
     .middle{
-        height:1600px;
+        height:1800px;
         margin-top:-10px;
         margin-left: 0px;
     }
@@ -789,6 +789,20 @@ width: auto;
         background-color: rgb(255, 255, 255,0.8);
         color: black;
     }
-
+    .full{
+        margin-top : 300px;
+        margin-bottom: 100px;
+        width: 90%;
+    }
+    #page_5_head{
+        margin-bottom: 150px;
+    }
+    #box_1,#box_2,#box_3,#box_4,#box_5,#box_6,#box_7,#box_8,#box_9,#box_10,#box_11,#box_12{
+        width: 150px;
+        height: 150px;
+    }
+    #rest,#bootstrap,#react,#sqlite,#github,#git,#photoshop,#orm,#py{
+        width: 120px;
+    }
 }
 

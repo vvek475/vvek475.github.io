@@ -1,10 +1,10 @@
 .experienceContainer{
     height: 400px;
-    background-color: gold;
+    background-color: #00ffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right,gold,rgb(128, 128, 128,.8));
+    background-image: linear-gradient(to right,#00ffff,black);
 }
 .experienceBox{
     width: 60%;
@@ -37,7 +37,7 @@
     display: none;
     z-index: 5;
     background-color: black;
-    color: gold;
+    color: #00ffff;
     font-size: 18px;
     width: 300px;
     border-radius: 4px;

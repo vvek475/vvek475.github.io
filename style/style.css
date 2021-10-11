@@ -70,7 +70,7 @@ body{
     top: 0;
     right: 0;
     left: 0;
-    width: 95%;
+    width: 100%;
     position: fixed;
     display: flex;
     padding: 10px;
@@ -163,13 +163,13 @@ body{
     letter-spacing: 30px;
     backdrop-filter: blur(20px);
     padding: 10px 0px 10px 22px;
-    background-color: rgb(255,255,255,0.5);
-    border: 1px solid rgb(255,255,255,0.5);
+/*     background-color: rgb(255,255,255,0.5);
+    border: 1px solid rgb(255,255,255,0.5); */
 }
 .hero ul{
     backdrop-filter: blur(20px);
-    background-color: rgb(255,255,255,0.5);
-    border: 1px solid rgb(255,255,255,0.5);
+/*     background-color: rgb(255,255,255,0.5);
+    border: 1px solid rgb(255,255,255,0.5); */
     color: white;
     
 }
@@ -183,7 +183,7 @@ body{
     border: 1px solid transparent;
 }
 .hero ul li:hover i{
-    background-color: #00ffff;
+    background-color:white;
     color: black;
     font-size: 30px;
 }
@@ -285,7 +285,8 @@ body{
     width: 100%;
     font-weight: bold;
     padding: 50px 0px;
-    font-family: 'Kaushan Script', cursive;
+    font-family:  'Fahkwang', sans-serif;
+    letter-spacing: 10px;
     font-size: 30px;
     border-bottom: 5px solid rgb(255,255,255,0.5);
 }
@@ -619,7 +620,7 @@ i{
         height: 80%;
     }
     .hero{
-        background:url('/images/hero_mobile.jpg');
+
         background-repeat: no-repeat;
         background-size: cover;
     }

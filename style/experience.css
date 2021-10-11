@@ -1,0 +1,80 @@
+.experienceContainer{
+    height: 400px;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,gold,rgb(128, 128, 128,.8));
+}
+.experienceBox{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.experienceBox li:hover{
+    color: white;
+}
+.experienceBox li p{
+    padding:  20px 0px;
+    font-size: medium;
+    text-align: center;
+}
+.experienceBox li{
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight:bolder!important;
+    color: black;
+}
+.experienceList li:hover span{
+    display: block;
+    margin-left: -50px;
+}
+.experienceBox li span{
+    text-align: justify;
+    position: absolute;
+    display: none;
+    z-index: 5;
+    background-color: black;
+    color: gold;
+    font-size: 18px;
+    width: 300px;
+    border-radius: 4px;
+    padding: 15px;
+    overflow: auto;
+}
+.experienceImage{
+    z-index: 1;
+    top:-40px;
+    animation: float 5s linear infinite;
+
+}
+@keyframes float{
+    0%,100%{
+        padding-top: 0px;
+    }
+    50%{
+        padding-top: 50px;
+    }
+}
+@media (max-width:675px){
+    .experienceImage img{
+        width: 100%;
+        order: 1;
+    }
+    .experienceImage{
+        height: 400px;
+    }
+    .experienceContainer{
+
+        flex-direction: column;
+        height: 600px;
+    }
+    .experienceBox{
+        order: 2;
+    }
+    .experienceBox li{
+        font-size: 16px;
+    }
+}

@@ -1,65 +1,37 @@
-//document.getElementById('all').onclick=function() {
-  //  myfunction()
-//};
-
-
-function allFunction() {
-    document.getElementById("box_1").style.display="block";
-    document.getElementById("box_2").style.display="block";
-    document.getElementById("box_3").style.display="block";
-    document.getElementById("box_4").style.display="block";
-    document.getElementById("box_5").style.display="block";
-    document.getElementById("box_6").style.display="block";
-    document.getElementById("box_7").style.display="block";
-    document.getElementById("box_8").style.display="block";
-    document.getElementById("box_9").style.display="block";
-    document.getElementById("box_10").style.display="block";
-    document.getElementById("box_11").style.display="block";
-    document.getElementById("box_12").style.display="block";
-    
-}
-function frontFunction() {
-    document.getElementById("box_1").style.display="none";
-    document.getElementById("box_2").style.display="block";
-    document.getElementById("box_3").style.display="none";
-    document.getElementById("box_4").style.display="none";
-    document.getElementById("box_5").style.display="block";
-    document.getElementById("box_6").style.display="block";
-    document.getElementById("box_7").style.display="none";
-    document.getElementById("box_8").style.display="none";
-    document.getElementById("box_9").style.display="none";
-    document.getElementById("box_10").style.display="none";
-    document.getElementById("box_11").style.display="block";
-    document.getElementById("box_12").style.display="none";
-}
-function backFunction() {
-    document.getElementById("box_1").style.display="block";
-    document.getElementById("box_2").style.display="none";
-    document.getElementById("box_3").style.display="none";
-    document.getElementById("box_4").style.display="block";
-    document.getElementById("box_5").style.display="none";
-    document.getElementById("box_6").style.display="none";
-    document.getElementById("box_7").style.display="block";
-    document.getElementById("box_8").style.display="none";
-    document.getElementById("box_9").style.display="none";
-    document.getElementById("box_10").style.display="none";
-    document.getElementById("box_11").style.display="none";
-    document.getElementById("box_12").style.display="block";
-}
-function scvFunction() {
-    document.getElementById("box_1").style.display="none";
-    document.getElementById("box_2").style.display="none";
-    document.getElementById("box_3").style.display="none";
-    document.getElementById("box_4").style.display="none";
-    document.getElementById("box_5").style.display="none";
-    document.getElementById("box_6").style.display="none";
-    document.getElementById("box_7").style.display="none";
-    document.getElementById("box_8").style.display="block";
-    document.getElementById("box_9").style.display="block";
-    document.getElementById("git").style.display="block";
-    document.getElementById("box_9").style.display="block";
-    document.getElementById("box_10").style.display="none";
-    document.getElementById("box_11").style.display="none";
-    document.getElementById("box_12").style.display="none";
-
+home=document.querySelectorAll('.link')
+homelink=document.querySelectorAll('.linkto')
+home1=[...home]
+home2=[...homelink]
+console.log(home1,home2[0])
+console.log(home2[0])
+homesel=document.getElementById('home')
+home1[0].addEventListener('click',function(e){
+    console.log('ok')
+    calc()
+    home2[0].style.display="flex"
+})
+home1[1].addEventListener('click',function(e){
+    console.log('ok')
+    calc()
+    home2[1].style.display="flex"
+})
+home1[2].addEventListener('click',function(e){
+    console.log('ok')
+    calc()
+    home2[2].style.display="flex"
+})
+home1[3].addEventListener('click',function(e){
+    console.log('ok')
+    calc()
+    home2[3].style.display="flex"
+})
+home1[4].addEventListener('click',function(e){
+    console.log('ok')
+    calc()
+    home2[4].style.display="flex"
+})
+function calc(){
+    home2.forEach(element => {
+        element.style.display='none'
+    });
 }

@@ -1,8 +1,7 @@
 .skill{
-    width: 99.9%;
+    width: 100%;
     background-color: rgba(256, 255, 255, 0.2);
     backdrop-filter: blur(14px);
-    border: 1px solid rgba(256, 255, 255, 0.1);
     height: auto;
     display: flex;
     justify-content: center;

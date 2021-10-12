@@ -76,4 +76,7 @@ textarea::-webkit-scrollbar{
     .contactform input:not(:last-child),textarea{
         width: 120%;
     }
+    .contactform{
+        height: 110%;
+    }
 }

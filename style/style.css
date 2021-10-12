@@ -205,13 +205,13 @@ body{
 .dropbtn {
     display: none;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     opacity: 60%;
     border: none;
     margin-top: 20px;
     background-color: transparent;
 }
-  
+
 .dropdown {
     position: relative;
     display: inline-block;   
@@ -271,6 +271,9 @@ body{
     background-color: rgb(255,255,255,0.2);
     border: 1px solid rgb(255,255,255,0.1);
     width: 400px;
+}
+.hide{
+    display: none;
 }
 .menu ul{
     padding: 50px;
@@ -470,7 +473,6 @@ i{
     }
     .dropbtn{
         display: block;
-        font-size: 35px;
     }
     .summary{
         font-weight: 200;
@@ -568,9 +570,9 @@ i{
         font-size: 25px;
     }
     .hero ul li i{
-        font-size: 12px;
-        width: 22px;
-        height:22px;
+        font-size: 18px;
+        width: 32px;
+        height:32px;
         padding: 5px;
         margin:0px;
 
@@ -592,20 +594,18 @@ i{
     }
     .menu{
         width:30%;
-        height:600px
+        height:100%;
+        width: 80px;
 
     }
     .aboutBox{
-        width: 90%;
-        justify-content: space-between;
+        width: 100%;
+        justify-content: space-around;
     }
     .menu ul{
         padding :5px;
     }
-    .menu ul a{
-        font-size: 15px;
-        border: none;
-    }
+
     .nextmenu{
         height:75%;
         width: 60%;
@@ -620,12 +620,23 @@ i{
         height: 80%;
     }
     .hero{
-
         background-repeat: no-repeat;
         background-size: cover;
     }
     .name{
         font-size: 15px;
     }
-    
+    .hide a{
+        
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+    }
+    .hide a i{
+        padding: 10px 5px;
+        color: white;
+    }
+    .show a{
+        display: none;
+    }
 }

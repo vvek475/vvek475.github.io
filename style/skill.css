@@ -36,13 +36,18 @@
     align-items: center;
     font-weight: bold;
 }
-.skillContainer div i{
+.bigicon{
     font-size:80px;
+
     padding: 10px 0px;
+}
+.smallicon{
+    color: black;
 }
 .rest{
     color: #00ffff;font-size: 50px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-left: -12px;
 }
+
 @media (max-width:675px){
     .skillContainer div span{
         font-size: 15px;
@@ -50,11 +55,16 @@
     .skillContainer div{
         width: 100%;
     }
-    .skillContainer div i{
+/*     .skillContainer div i{
         font-size:50px;
         padding: 10px 0px;
-    }
+    } */
     .rest{
         font-size: 30px;
     }
+
+    .skillContainer a{
+        display: none;
+    }
+
 }

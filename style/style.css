@@ -7,9 +7,10 @@
     margin:0;
     text-decoration: none;
     text-align: justify;
+    
 }
 :root{
-    --var-theme:#00ffff;
+    --var-theme:rgb(255, 0, 0);
 }
 div{
 
@@ -420,8 +421,8 @@ body{
 
 .contactbox{
     margin: 0;
-    backdrop-filter: blur(20px);
-    background-color: rgb(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+
     width: 100%;
     display: flex;
     align-items: center;
@@ -437,15 +438,16 @@ body{
 
 }
 .column ul li{
-    font-family: sans-serif;
+    font-family:'Fahkwang', sans-serif;
+    font-weight: bold;
     list-style: none;
     color: var(--var-theme);
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
 
 }
 .contactcontainer li i{
-    padding-right: 2px;
+    padding-right: 5px;
     color: white;
     transition:all .3s linear;
 }
@@ -458,7 +460,7 @@ i{
     color: var(--var-theme);
 }
 .headingcon{
-    font-family: sans-serif;
+    font-family:'Fahkwang', sans-serif;
     font-size: 28px;
     color: white;
 }

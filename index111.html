@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        ul{
+            border-radius: 20px;
+            padding: 5px 5px 5px 5px;
+            list-style: none;
+            height: 15px;
+            overflow: hidden;
+            transition: 4s;
+            background-color: black;
+        }
+        .iconhead{
+            display: block;
+        }
+        ul:hover{
+
+            animation: height .8s linear;
+            height: 105px;
+        }
+        .iconhead:hover{
+            animation: rotate 2s linear infinite;
+        }
+        li{
+            list-style: none;
+            color: white;
+        }
+        li:not(:first-child){
+            padding-top: 10px;
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(90deg)
+            }
+            50%{
+                transform: rotate(180deg)
+            }
+            75%{
+                transform: rotate(270deg)
+            }
+            100%{
+                transform: rotate(360deg)
+            }
+        }
+        @keyframes height {
+            0%{
+                height:18px
+            }
+            100%{
+                height: 105px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="iconhead"><i class="fas fa-cog"></i></li>
+        <li><i class="fas fa-cog"></i></li>
+        <li><i class="fas fa-cog"></i></li>
+        <li><i class="fas fa-cog"></i></li>
+    </ul>
+    
+</body>
+</html>

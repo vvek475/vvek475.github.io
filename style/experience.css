@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to right,var(--var-theme),black);
+    opacity: 90%;
 }
 .experienceBox{
     width: 60%;
@@ -22,13 +23,15 @@
     text-align: center;
 }
 .experienceBox li{
+    font-family:'Fahkwang', sans-serif;
     cursor: pointer;
     margin-bottom: 10px;
     font-size: 28px;
     font-weight:bolder!important;
-    color: black;
+
 }
 .experienceList li:hover span{
+    font-weight: bolder;
     display: block;
     margin-left: -50px;
 }

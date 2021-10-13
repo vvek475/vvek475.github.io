@@ -645,3 +645,47 @@ i{
         display: none;
     }
 }
+@media(max-width:1200px){
+    .dropbtn{
+        display: block;
+        margin-right: 20px;
+    }
+    .navbar{
+        display: none;
+    }
+    .herContainer p{
+        font-size: 45px;
+    }
+    .hide a{
+        
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+    }
+    .hide a i{
+        padding: 10px 5px;
+        color: white;
+    }
+    .show a{
+        display: none;
+    }
+    .menu{
+        width: 20%;
+    }
+    .aboutBox{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .menu ul{
+        padding :5px;
+    }
+
+    .nextmenu{
+        height:75%;
+        width: 60%;
+        overflow: auto;
+    }
+    .experienceImage{
+        display: none;
+    }
+}

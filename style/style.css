@@ -692,4 +692,7 @@ i{
     .experienceImage{
         display: none;
     }
+    .contactHide{
+        display: none;
+    }
 }

@@ -696,3 +696,130 @@ i{
         display: none;
     }
 }
+.projectContainer{
+    width: 100%;
+    height: 100vh;
+    margin-top: 500px;
+    background-color: rgb(255,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.projectContainer__title{
+    padding: 50px 0px 50px 00px;
+    color: white;
+}
+.projectcontainer__text{
+    text-align:justify;
+    font-weight: bold;
+    width: 60%;
+    color: white;
+    font-size: 150%;
+    font-family:'Fahkwang', sans-serif;
+}
+iframe{
+    margin-top: -200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 300px;
+    background-color: white;
+}
+.pcres{
+    width: 100%;
+    display: none;
+}
+.projectContent img{
+    
+    width: 40%;
+    height: 100%;
+    
+}
+.projectContent{
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;  
+    
+}
+.projectContent p{
+    padding: 40px 40px 40px 0px;
+    font-size: 120%;
+    margin-bottom: 100px;
+    padding: 20px;
+    border-bottom: 5px solid black;
+    width: 100%;
+}
+.projectContent h2{
+    
+    padding: 80px 40px 40px 0px;
+    border-bottom: 5px solid black;
+}
+.projecttext{
+    padding: 30px 0px 40px 10px;
+    flex-basis: 50%;
+    
+}
+.pills li{
+    padding: 5px 20px;
+    width:100px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border-radius: 20px;
+    border:1px solid black;
+    list-style: none;
+    margin-bottom: 20px;
+}
+@media(max-width:1200px){
+    .container{
+        width: 800px;
+    }
+    .projectContent img{
+        order: 2;
+    }
+    .projecttext{
+        width: 100%;
+        order: 3;
+    }
+    .projectContent{
+        flex-direction: column;
+    }
+    .projectContent p{
+        width: 100%;
+    }
+
+}
+
+@media(max-width:765px){
+    .container,.projectContent p{
+        width: 545px;
+    }
+    iframe{
+        display: none;
+    }
+    .projectContent img{
+        width: 100%;
+    }
+    .pcres{
+        display: block;
+    }
+}
+@media(max-width:545px){
+    .container,.projecttext{
+        width: 445px;
+    }
+    .projectcontainer__text{
+        font-size: 120%;
+    }
+}
+@media(max-width:545px){
+    .container,.projecttext{
+        width: 300px;
+    }
+    
+}

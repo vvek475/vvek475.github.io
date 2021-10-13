@@ -796,7 +796,7 @@ iframe{
 }
 
 @media(max-width:765px){
-    .container,.projectContent p{
+    .container{
         width: 545px;
     }
     iframe{
@@ -821,5 +821,5 @@ iframe{
     .container,.projecttext{
         width: 300px;
     }
-    
+
 }

@@ -6,13 +6,9 @@
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to right,var(--var-theme),black);
-    opacity: 90%;
+
 }
-.experienceBox{
-    width: 60%;
-    display: flex;
-    justify-content: center;
-}
+
 
 .experienceBox li:hover{
     color: white;
@@ -26,12 +22,11 @@
     font-family:'Fahkwang', sans-serif;
     cursor: pointer;
     margin-bottom: 10px;
-    font-size: 28px;
+    font-size: 32px;
     font-weight:bolder!important;
 
 }
 .experienceList li:hover span{
-    font-weight: bolder;
     display: block;
     margin-left: -50px;
 }
@@ -39,7 +34,6 @@
     text-align: justify;
     position: absolute;
     display: none;
-    z-index: 5;
     background-color: black;
     color: var(--var-theme);
     font-size: 18px;
@@ -48,36 +42,8 @@
     padding: 15px;
     overflow: auto;
 }
-.experienceImage{
-    z-index: 1;
-    top:-40px;
-    animation: float 5s linear infinite;
 
-}
-@keyframes float{
-    0%,100%{
-        padding-top: 0px;
-    }
-    50%{
-        padding-top: 50px;
-    }
-}
 @media (max-width:675px){
-    .experienceImage img{
-        width: 100%;
-        order: 1;
-    }
-    .experienceImage{
-        height: 400px;
-    }
-    .experienceContainer{
-
-        flex-direction: column;
-        height: 600px;
-    }
-    .experienceBox{
-        order: 2;
-    }
     .experienceBox li{
         font-size: 16px;
     }

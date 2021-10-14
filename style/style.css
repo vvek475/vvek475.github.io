@@ -177,20 +177,7 @@ body{
     color: white;
     
 }
-.hero ul li i{
-    width: 30px;
-    height: 30px;
-    font-size: 28px;
-    padding: 10px;
-    border-radius: 60px;
-    margin:10px;
-    border: 1px solid transparent;
-}
-.hero ul li:hover i{
-    background-color:white;
-    color: black;
-    font-size: 30px;
-}
+
 @keyframes typer {
     0%{
         width: 0px;
@@ -323,97 +310,6 @@ body{
     align-items: center;
     padding: 100px;
 }
-.project_1{
-    display: flex;
-    flex-basis: 90%;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.details_1{
-    display: flex;
-    flex-direction: column;
-    color: var(--var-theme);
-    justify-content: flex-end;
-}
-
-.para{
-    font-size: 20px;
-    color: white;
-    width: 600px;
-    text-align: justify;
-}
-.page_4{
-    margin-top: 300px;
-    display: block;
-}
-.cake{
-    width: 600px;
-    display: flex;
-    
-
-}
-.img_1{
-    flex-basis: 45%;
-    display: flex;
-    justify-content: flex-end;
-
-}
-.details_2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: flex-end   ;
-    color: var(--var-theme);
-    height: 500px;
-    
-}
-
-
-.img_2{
-    width: 650px;
-    height: fit-content;
-    flex-basis: 50%;
-    margin-top: 150px;
-    display: flex;
-
-    justify-content: flex-end;
-    margin-bottom: 100px;
-
-}
-.img_2_1{
-    display: none;
-}
-.project_2{
-    display: flex;
-    margin-top: 200px;
-
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-.details_3 {
-    margin-top: 50px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.proj_link_2{
-    color:var(--var-theme);
-    font-size: 25px;
-    text-decoration: none;
-    text-align: right;
-}
-.proj_link_2:hover{
-    color: white;
-}
-
-.img_3{
-    
-    width: 650px;
-    margin-top:150px;
-    height: fit-content;
-}
 
 
 /* starts here */
@@ -480,83 +376,7 @@ i{
         margin-right: -10px;
         display: block;
     }
-    .summary{
-        font-weight: 200;
-        width: auto;
-        height: 400px;
-        padding: 10px;
-        padding-right: 20px;
-        padding-top: 50px;
-        font-size: 20px;
-        background: url('/images/code_pic.jpg');
-        background-size: 95%;
-        background-repeat: no-repeat;
-        
-    }
-    .page_1{
-        margin-left:15px
-    }
-    .page_img_1{
-        display: none;
-    }
-    .page_1_column_1{
-        flex-basis: auto;
-    }
-
-    header{
-        width: 100%;
-        margin-left: 0px;
-        margin-top: 150px;
-    }
-   
-
-    .buttons{
-        display: flex;
-        flex-direction: column;
-        margin-top: 100px;
-        
-    }
-
-
-    .topic{
-        font-size: 30px;
-    }
-    .para{
-        font-size: 15px;
-    }
-    .cake{
-        width:320px;
-        margin-bottom: -100px;
-    }
-    .img_2_1,.img_3{
-        display: block;
-        margin-top: 150px;
-        width: 360px;
-    }
-    .img_2{
-        display: none;
-    }
-    .details_3,.details_2{
-        margin-top: 0px;
-        width: 100%;
-    }
-    .details_1{
-        margin-left: 0px;
-    }
-    .para{
-        margin-left: 0px;
-        
-    }
-    .topic,.para{
-        width:100%
-    }
-    .img_2{
-        margin-bottom: 10px;
-    }
-    .img_1{
-        margin-top: 100px;
-    }
-
+ 
     /* now */
     .title{
         font-size: 30px;
@@ -568,36 +388,7 @@ i{
         font-size: 30px;
         padding: 20px 0px;
     }
-    .herContainer{
-        height: auto;
-        margin-top: 150px;
-    }
-    .herContainer p{
-        font-size: 25px;
-    }
-    .hero ul li i{
-        font-size: 18px;
-        width: 32px;
-        height:32px;
-        padding: 5px;
-        margin:0px;
 
-    }
-    .togo{
-        display: none;
-
-    }
-    .hero ul li i:hover{
-        font-size: 10px;
-    }
-    .herContainer span{
-        font-size: 10px;
-        letter-spacing: 15px;
-    }
-    .horizontal{
-        display: flex;
-        width: 300px;
-    }
     .menu{
         width:30%;
         height:100%;
@@ -657,9 +448,7 @@ i{
     .navbar{
         display: none;
     }
-    .herContainer p{
-        font-size: 45px;
-    }
+
     .hide a{
         
         display: flex;
@@ -820,6 +609,9 @@ iframe{
 @media(max-width:545px){
     .container,.projecttext{
         width: 300px;
+    }
+    .projectContent img{
+        display: none;
     }
 
 }

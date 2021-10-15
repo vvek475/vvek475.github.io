@@ -1,0 +1,73 @@
+.about{
+    overflow: hidden;
+    height: 800px;
+    background: url(/images/about.jpg);
+    display: flex;
+    justify-content: space-around;
+}
+.aboutBox{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    justify-content: space-between;
+}
+.menu{
+    backdrop-filter: blur(20px);
+    background-color: rgb(255,255,255,0.2);
+    width: 30%;
+}
+.menu ul{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu ul a{
+    display: flex;
+    justify-content: center;
+    color: rgb(255,255,255,0.5);
+    padding: 50px 0px;
+    letter-spacing: 10px;
+    font-size: 30px;
+    border-bottom: 5px solid rgb(255,255,255,0.5);
+}
+.menu i{
+    display: none;
+    padding: 10px 0px;
+}
+.menu ul a:last-child{
+    border-bottom: none;
+}
+.nextmenu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.linkto{
+    font-family:  'Fahkwang', sans-serif;
+    display: none;
+    font-weight: bold;
+    height: 400px;
+}
+.nextmenu div{
+    backdrop-filter: blur(20px);
+    background-color: rgb(255,255,255,0.2);
+    border: 1px solid rgb(255,255,255,0.1);
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+@media(max-width:1200px){
+    .menu p{
+        display: none;
+    }
+    .menu i{
+        display: block;
+    }
+    .nextmenu div{    
+        font-size: 12px;
+        padding: 5px;
+    }
+}

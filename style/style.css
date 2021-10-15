@@ -16,6 +16,11 @@ div{
 
     font-family: sans-serif;
 }
+.blur{
+    backdrop-filter: blur(20px);
+    padding: 10px 0px 10px 22px;
+    
+}
 .title{
     opacity: 80%;
     padding:200px 0px;
@@ -23,26 +28,17 @@ div{
     justify-content: center;
     color: var(--var-theme);
     font-family:'Fahkwang', sans-serif;
-    font-weight: bold;
+    font-weight: medium;
     font-size: 60px;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
+}
+.text-white{
+    color:white
 }
 .title span{
     opacity: 90%;
     color: grey;
     font-family:'Fahkwang', sans-serif;
-}
-.title--small{
-    font-size: 50px;
-    padding: 20px 0px;
-    margin-bottom: 50px;
-    border-bottom: 5px solid var(--var-theme);
-}
-.title--zero{
-    padding: 50px 0px 0px 0px;
-    opacity: 60%;
-
-    border: none;
 }
 li i{
     color: white;
@@ -132,67 +128,6 @@ body{
     font-weight: medium;
     letter-spacing: 15px;
 }
-.hero{
-    overflow: hidden;
-    background:url('/images/hero_2.jpg');
-    height:100vh;
-    width:100%;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-}
-.herContainer{
-    width: 90%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.herContainer p{
-    font-size: 100px;
-    /* color: var(--var-theme); */
-    font-weight: medium;
-    color: white;
-    letter-spacing: 15px;
-    font-family:  'Fahkwang', sans-serif;
-    text-align: center;
-    overflow: hidden;
-}   
-.herContainer span{
-    color: white;
-    font-size: 20px;
-    letter-spacing: 30px;
-    backdrop-filter: blur(20px);
-    padding: 10px 0px 10px 22px;
-/*     background-color: rgb(255,255,255,0.5);
-    border: 1px solid rgb(255,255,255,0.5); */
-}
-.hero ul{
-    backdrop-filter: blur(20px);
-/*     background-color: rgb(255,255,255,0.5);
-    border: 1px solid rgb(255,255,255,0.5); */
-    color: white;
-    
-}
-
-@keyframes typer {
-    0%{
-        width: 0px;
-    }
-    100%{
-        width: 500px;
-    }
-}
-.horizontal{
-    display: flex;
-    display: none;
-    margin-top: 200px;
-    justify-content: space-around;
-    width: 500px;
-}
 .dropbtn {
     display: none;
     color: white;
@@ -232,89 +167,7 @@ body{
 .dropdown:hover .dropdown-content {display: block;}
   
 .dropdown:hover .dropbtn {background-color: transparent}
-.about{
-    overflow: hidden;
-    height: 800px;
-    width: 100%;
-
-    background: url(/images/about.jpg);
-}
-.aboutContainer{
-    height: 100%;
-    width: 100%;
-    backdrop-filter: blur(20px);
-    background-color: rgb(255,255,255,0.2);
-    border: 1px solid rgb(255,255,255,0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.aboutBox{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.menu{
-    height: 100%;
-    backdrop-filter: blur(20px);
-    background-color: rgb(255,255,255,0.2);
-    border: 1px solid rgb(255,255,255,0.1);
-    width: 400px;
-}
-.hide{
-    display: none;
-}
-.menu ul{
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.menu ul a{
-    /* color: rgb(0, 0, 255,0.5); */
-    color: rgb(255,255,255,0.5);
-    text-align: center;
-    width: 100%;
-    font-weight: bold;
-    padding: 50px 0px;
-    font-family:  'Fahkwang', sans-serif;
-    letter-spacing: 10px;
-    font-size: 30px;
-    border-bottom: 5px solid rgb(255,255,255,0.5);
-}
-.menu ul a:last-child{
-    border-bottom: none;
-}
-.nextmenu{
-    width: 100%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.linkto{
-    font-family:  'Fahkwang', sans-serif;
-    display: none;font-weight: bold;
-    height: 400px;
-}
-.nextmenu div{
-    backdrop-filter: blur(20px);
-    background-color: rgb(255,255,255,0.2);
-    border: 1px solid rgb(255,255,255,0.1);
-    min-width: 400px;
-    max-width: 500px;
-    height: 500px;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
-}
-
-
 /* starts here */
-
-
 .contactbox{
     margin: 0;
     backdrop-filter: blur(5px);
@@ -362,8 +215,14 @@ i{
 }
 
 @media (max-width:695px){
+    .text-med{
+        font-size: 10px;
+    }
     *{
         box-sizing: border-box;
+    }
+    i{
+        font-size: 18px;
     }
     .navbar{
         display: none;
@@ -387,57 +246,10 @@ i{
     .column h3{
         font-size: 30px;
         padding: 20px 0px;
-    }
+    }   
 
-    .menu{
-        width:30%;
-        height:100%;
-        width: 80px;
-
-    }
-    .aboutBox{
-        width: 100%;
-        justify-content: space-around;
-    }
-    .menu ul{
-        padding :5px;
-    }
-
-    .nextmenu{
-        height:75%;
-        width: 60%;
-        overflow: auto;
-    }
-    .nextmenu div{
-        height: 100%;
-    }.linkto{
-        width: 100%;
-        padding: 20px;
-        font-size: 12px;
-        height: 80%;
-    }
-    .hero{
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
     .name{
         font-size: 15px;
-    }
-    .hide a{
-        
-        display: flex;
-        justify-content: center;
-        font-size: 10px;
-    }
-    .hide a i{
-        padding: 10px 5px;
-        color: white;
-    }
-    .show a{
-        display: none;
-    }
-    .experienceImage{
-        display: block;
     }
 }
 @media(max-width:1200px){
@@ -448,170 +260,7 @@ i{
     .navbar{
         display: none;
     }
-
-    .hide a{
-        
-        display: flex;
-        justify-content: center;
-        font-size: 10px;
-    }
-    .hide a i{
-        padding: 10px 5px;
-        color: white;
-    }
-    .show a{
-        display: none;
-    }
-    .menu{
-        width: 20%;
-    }
-    .aboutBox{
-        width: 100%;
-        justify-content: space-around;
-    }
-    .menu ul{
-        padding :5px;
-    }
-
-    .nextmenu{
-        height:75%;
-        width: 60%;
-        overflow: auto;
-    }
-    .experienceImage{
-        display: none;
-    }
     .contactHide{
         display: none;
     }
-}
-.projectContainer{
-    width: 100%;
-    height: 100vh;
-    margin-top: 500px;
-    background-color: rgb(255,0,0,0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.projectContainer__title{
-    padding: 50px 0px 50px 00px;
-    color: white;
-}
-.projectcontainer__text{
-    text-align:justify;
-    font-weight: bold;
-    width: 60%;
-    color: white;
-    font-size: 150%;
-    font-family:'Fahkwang', sans-serif;
-}
-iframe{
-    margin-top: -200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.container{
-    width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 300px;
-    background-color: white;
-}
-.pcres{
-    width: 100%;
-    display: none;
-}
-.projectContent img{
-    
-    width: 40%;
-    height: 100%;
-    
-}
-.projectContent{
-    width: 100%;  
-    display: flex;
-    justify-content: space-between;  
-    
-}
-.projectContent p{
-    padding: 40px 40px 40px 0px;
-    font-size: 120%;
-    margin-bottom: 100px;
-    padding: 20px;
-    border-bottom: 5px solid black;
-    width: 100%;
-}
-.projectContent h2{
-    
-    padding: 80px 40px 40px 0px;
-    border-bottom: 5px solid black;
-}
-.projecttext{
-    padding: 30px 0px 40px 10px;
-    flex-basis: 50%;
-    
-}
-.pills li{
-    padding: 5px 20px;
-    width:100px;
-    color: white;
-    background-color: black;
-    text-align: center;
-    border-radius: 20px;
-    border:1px solid black;
-    list-style: none;
-    margin-bottom: 20px;
-}
-@media(max-width:1200px){
-    .container{
-        width: 800px;
-    }
-    .projectContent img{
-        order: 2;
-    }
-    .projecttext{
-        width: 100%;
-        order: 3;
-    }
-    .projectContent{
-        flex-direction: column;
-    }
-    .projectContent p{
-        width: 100%;
-    }
-
-}
-
-@media(max-width:765px){
-    .container{
-        width: 545px;
-    }
-    iframe{
-        display: none;
-    }
-    .projectContent img{
-        width: 100%;
-    }
-    .pcres{
-        display: block;
-    }
-}
-@media(max-width:545px){
-    .container,.projecttext{
-        width: 445px;
-    }
-    .projectcontainer__text{
-        font-size: 120%;
-    }
-}
-@media(max-width:545px){
-    .container,.projecttext{
-        width: 300px;
-    }
-    .projectContent img{
-        display: none;
-    }
-
 }

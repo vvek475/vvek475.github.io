@@ -6,60 +6,28 @@
     background-size: cover;
     position: relative;
     display: flex;
-
+    align-items: center;
     justify-content:center;
 }
 .heroText{
-    height: 100%;
-    display: flex;
+    display: flex;  
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-.heroText p{
-    font-size: 100px;
-    font-weight: medium;
-    color: white;
-    letter-spacing: 15px;
-    font-family:  'Fahkwang', sans-serif;
-    text-align: center;
-    overflow: hidden;
-}   
 .heroText span{
-    color: white;
-    font-size: 20px;
     letter-spacing: 30px;
-    backdrop-filter: blur(20px);
-    padding: 10px 0px 10px 22px;
-
 }
 .hero ul{
-    backdrop-filter: blur(20px);
     position: absolute ;
     right: 20px;
     top:translate(-50%,0);
-
-    bottom:auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    color: white;
-    
 }
-
-@keyframes typer {
-    0%{
-        width: 0px;
-    }
-    100%{
-        width: 500px;
-    }
-}
-
 .hero ul li i{
     width: 30px;
     height: 30px;
-    font-size: 28px;
+    font-size: 180%;
     padding: 10px;
     border-radius: 60px;
     margin:10px;
@@ -68,19 +36,8 @@
 .hero ul li:hover i{
     background-color:white;
     color: black;
-    font-size: 30px;
-}
-@media(max-width:1200px){
-
-    .heroText p{
-        font-size: 45px;
-    }
 }
 @media (max-width:576px){
-    .heroText{
-        height: auto;
-        margin-top: 150px;
-    }
     .hero ul{
         top: 90%;
         left: auto;
@@ -88,21 +45,7 @@
         flex-direction: row;
         width: 250px;
     }
-    .heroText p{
-        font-size: 25px;
-    }
-    .hero ul li i{
-        font-size: 18px;
-        padding: 5px;
-        margin:0px;
-
-    }
-
-    .hero ul li i:hover{
-        font-size: 10px;
-    }
     .heroText span{
-        font-size: 10px;
         letter-spacing: 15px;
     }
 }

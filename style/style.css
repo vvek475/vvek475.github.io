@@ -218,9 +218,6 @@ i{
     .text-med{
         font-size: 10px;
     }
-    *{
-        box-sizing: border-box;
-    }
     i{
         font-size: 18px;
     }

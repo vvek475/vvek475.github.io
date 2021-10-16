@@ -30,31 +30,7 @@ home1[4].addEventListener('click',function(e){
     calc()
     home2[4].style.display="flex"
 })
-home1[5].addEventListener('click',function(e){
-    console.log('ok')
-    calc()
-    home2[0].style.display="flex"
-})
-home1[6].addEventListener('click',function(e){
-    console.log('ok')
-    calc()
-    home2[1].style.display="flex"
-})
-home1[7].addEventListener('click',function(e){
-    console.log('ok')
-    calc()
-    home2[2].style.display="flex"
-})
-home1[8].addEventListener('click',function(e){
-    console.log('ok')
-    calc()
-    home2[3].style.display="flex"
-})
-home1[8].addEventListener('click',function(e){
-    console.log('ok')
-    calc()
-    home2[4].style.display="flex"
-})
+
 function calc(){
     home2.forEach(element => {
         element.style.display='none'

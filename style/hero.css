@@ -39,7 +39,7 @@
 }
 @media (max-width:576px){
     .hero ul{
-        top: 90%;
+        top: 85%;
         left: auto;
         right: auto;
         flex-direction: row;
@@ -48,4 +48,5 @@
     .heroText span{
         letter-spacing: 15px;
     }
+    
 }

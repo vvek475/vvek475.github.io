@@ -29,14 +29,15 @@
 .project_text{
     position: relative;
     padding: 50px;
-    width: 80%;
+    width: 60%;
     left: 50%;
     transform: translate(-50%,0);
     background-color: rgb(255,0,0,0.5);
     backdrop-filter: blur(10px);
 }
 .project_text div{
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color: white;
 }
 .project_text h2{
     text-align: center;
@@ -52,7 +53,7 @@
     .projectContainer__title{
         padding: 2px 0px;
     }
-    .swiper-button-next,.swiper-button-prev{
-        color: transparent;
+    #next,#prev{
+        display: none;
     }
 }
